@@ -1,0 +1,12 @@
+1 [ ] As a regular user of the application, I want to receive a simple error page if sth. went wrong so potential user might find a solution for that issue. 
+2 [ ] As a regular user of the application, I want to login via a password/pin without having separate users in the backend so that there is no issue in managing different accounts. 
+3 [ ] As a regular user of the application, I want to be able to share my generated data via an unique link (e.g. by generating a hash of that file and using that hash as a get-param) so that there are no complications in getting the generated file from A to B. 
+4 [ ] As a regular user of the application, I want to be able to download the generated file as e.g. a CSV-file so that files don't necessarily need to be shared via a link. 
+5 [ ] As a regular user of the application, I want to select all constraints on a single/the same page so that I have a good overview of what data I want to generate. 
+6 [ ] As a regular user of the application, I want to have the constraint view and the result view (= generated data) separated (different pages -> two step interface), so that I won't get confused when my generated data appears. 
+7 [ ] As a regular user of the application, I want some sort of session handling (implement some sort of middleware), so that I won't need to login again after every click. 
+8 [ ] As a regular user of the application, I want to have the possibility to choose how big a class can get (e.g. 18, etc.) so that the class size can be modified for each class individually. 
+9 [ ] As a maintainer of the application, I want to have e.g. some small interfaces (cohesion!) to configure/change hardcoded variables, so that I won't need to look through old code. 
+10 [ ] As a regular user of the application, I want to receive a courselist according to my previously selected constraints (main purpose of the application). 
+11 [ ] As a regular user of the application, I want to set all constraints as fast/easy as possible (e.g. sliders, dropdown, etc.) to provide a good user experience/usability. 
+12 [ ] As a regular user of the application, I want to have some sort of guidance when I don't know what to do (e.g. documentation, tooltips, help videos or whatever). 
