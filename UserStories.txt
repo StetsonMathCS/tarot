@@ -10,3 +10,5 @@
 10 [ ] As a regular user of the application, I want to receive a courselist according to my previously selected constraints (main purpose of the application). 
 11 [ ] As a regular user of the application, I want to set all constraints as fast/easy as possible (e.g. sliders, dropdown, etc.) to provide a good user experience/usability. 
 12 [ ] As a regular user of the application, I want to have some sort of guidance when I don't know what to do (e.g. documentation, tooltips, help videos or whatever). 
+13 [ ] Generate db connection
+14 [ ] Tomcat logs should be accessible outside of docker
