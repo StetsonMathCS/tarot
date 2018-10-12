@@ -10,30 +10,22 @@ import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class DbControllerTest {
     static DbController dbController;
+    static IDbController.GotQueryResult dbCallback;
 
     @BeforeAll
     static void setUp() {
-           dbController = new DbController();
-    }
-
-    @AfterAll
-    static void tearDown() {
-        dbController = null;
-    }
-
-
-    /** Method written MORE EXPENSIVE to have some guidance in the beginning */
-    @Test
-    void executeQuery() {
-        dbController.executeQuery("SHOW DATABASES;", new IDbController.GotQueryResult() {
+        dbController = new DbController();
+        dbCallback = new IDbController.GotQueryResult() {
             @Override
             public void onSuccess(ResultSet rs) {
-                System.out.println("Fetched resultSet -> "+rs.toString());
+                System.out.println("Fetched resultSet -> " + rs.toString());
 
                 //Thanks to https://stackoverflow.com/questions/9009422/how-do-i-iterate-through-the-values-of-a-row-from-a-result-set-in-java
                 try {
@@ -51,7 +43,7 @@ class DbControllerTest {
                     }
 
                     for (String column : columnList) {
-                        System.out.print("Column -> "+column+" \n");
+                        System.out.print("Column -> " + column + " \n");
                     }
                 } catch (SQLException e) {
                     e.printStackTrace();
@@ -61,9 +53,19 @@ class DbControllerTest {
 
             @Override
             public void onFailure() {
-                System.err.println("Could not fetch resultSet.");
-                fail("SQL Exception catched, but test case failed.");
+                System.err.println("Could not execute query.");
             }
-        });
+        };
+    }
+
+    @AfterAll
+    static void tearDown() {
+        dbController = null;
+    }
+
+
+    @Test
+    void executeQueryAsync() throws ExecutionException, InterruptedException, SQLException {
+        dbController.executeQueryAsync("SHOW DATABASES;", dbCallback);
     }
 }
