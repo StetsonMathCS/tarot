@@ -1,15 +1,10 @@
 package com.stetson.controller;
 
 import com.stetson.controller.interfaces.IDbController;
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
-import com.sun.xml.internal.bind.v2.model.core.ID;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.AsyncResult;
 import org.springframework.scheduling.annotation.EnableAsync;
 
 import java.sql.*;
-import java.util.concurrent.Future;
 // DO NOT IMPORT com.mysql.jdbc.* (broken implementations)
 
 /**
