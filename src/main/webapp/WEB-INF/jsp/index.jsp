@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Test page</title>
+    <jsp:include page="./headers/analytics.jsp"/>
 </head>
 <body>
     <h2>Welcome!</h2>

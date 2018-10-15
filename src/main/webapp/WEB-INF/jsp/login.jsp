@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Title</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <jsp:include page="./headers/analytics.jsp"/>
 </head>
 <body>
     <h3>Login Page</h3>

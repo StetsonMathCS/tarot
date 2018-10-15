@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>${statusCode} - Error</title>
+    <jsp:include page="./headers/analytics.jsp"/>
 </head>
 <body>
 <h2>Error - ${statusCode} ${exceptionMessage}</h2>
