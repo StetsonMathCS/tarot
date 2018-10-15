@@ -7,14 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ea4566-76a4-4bb7-a00c-60030eeeb88f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/StetsonUniversity_CourseSchedule.iml" afterPath="$PROJECT_DIR$/.idea/StetsonUniversity_CourseSchedule.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/headers/analytics.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java" afterPath="$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/controller/EXAMPLE_DATABASE_CLASS.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/IDbController.java" afterPath="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/IDbController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customError.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customError.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CSVController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+            <state relative-caret-position="357">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -79,15 +76,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/hello.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/errors/err404.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/ErrorController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customError.jsp" />
         <option value="$PROJECT_DIR$/FrontEnd_Constraints.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/HomeControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/middlewares/SessionMiddleware.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/SessionMiddleware.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/DefaultMapping-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/ListenerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/ErrorControllerTest.java" />
@@ -106,6 +100,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/headers/analytics.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customError.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
       </list>
     </option>
   </component>
@@ -167,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,13 +241,48 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="DbControllerTest" type="1a9f42e2:ClassTreeNode" />
             </path>
+            <path>
+              <item name="tarot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tarot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tarot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tarot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tarot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tarot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tarot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tarot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="headers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,6 +302,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.stetson.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kevin\Desktop\stetson_university\Cplusplus\tarot\src\main\webapp\WEB-INF\jsp\headers" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -291,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in StetsonUniversity_CourseSchedule">
+  <component name="RunManager" selected="Tomcat Server.TC_Start">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -528,14 +563,12 @@
       <workItem from="1539183273023" duration="2895000" />
       <workItem from="1539186501207" duration="123000" />
       <workItem from="1539356905950" duration="2431000" />
-      <workItem from="1539615794144" duration="2447000" />
+      <workItem from="1539615794144" duration="2780000" />
+      <workItem from="1539624625338" duration="372000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.10.15 at 17h 21m 46s.xml">
-      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.10.15 at 17h 22m 10s.xml">
       <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
@@ -557,18 +590,22 @@
     <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.10.15 at 17h 43m 22s.xml">
       <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DbControllerTest_executeQuerySync - 2018.10.12 at 17h 38m 12s.xml">
-      <configuration name="DbControllerTest.executeQuerySync" configurationId="JUnit" />
+    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.10.15 at 17h 50m 18s.xml">
+      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.10.15 at 19h 36m 26s.xml">
+      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DbControllerTest_executeQuerySync - 2018.10.12 at 17h 38m 50s.xml">
       <configuration name="DbControllerTest.executeQuerySync" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47565000" />
+    <option name="totallyTimeSpent" value="48270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -589,10 +626,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34583822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34583822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3270809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22771214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23093449" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -620,23 +657,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#2117#2118#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="819">
           <caret line="39" column="53" lean-forward="false" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-          <folding>
-            <element signature="e#2117#2118#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -644,10 +667,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="39" column="53" lean-forward="false" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
-          <folding>
-            <element signature="e#2117#2118#0" expanded="false" />
-            <element signature="e#2195#2196#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,10 +675,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="861">
           <caret line="41" column="65" lean-forward="false" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
-          <folding>
-            <element signature="e#1656#1657#0" expanded="false" />
-            <element signature="e#2874#2875#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -666,10 +683,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#1656#1657#0" expanded="false" />
-            <element signature="e#2874#2875#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -779,13 +793,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/controller/HomeControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customError.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/sbt.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
@@ -808,13 +815,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/HomeController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/DefaultMapping-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -834,13 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="108" column="13" lean-forward="false" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -916,25 +909,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="48" column="88" lean-forward="false" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
-          <folding>
-            <element signature="e#1656#1657#0" expanded="false" />
-            <element signature="e#2874#2875#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/EXAMPLE_DATABASE_CLASS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/EXAMPLE_DATABASE_CLASS.java" />
     <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -967,10 +942,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="48" column="87" lean-forward="true" selection-start-line="48" selection-start-column="87" selection-end-line="48" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        <state relative-caret-position="156">
+          <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/headers/analytics.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/customError.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
