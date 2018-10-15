@@ -1,0 +1,11 @@
+* Java Spring in general (esp.: Spring MVC): Apache 2.0; 
+	- Covers user stories: All
+* Spring Session: Apache 2.0
+	- Covers user Stories: 2, 7, 12 (e.g. first visit on page show basic introduction)
+* Java: Oracle Binary Code License (BCL)
+	- Covers user stories: All
+* Bootstrap: MIT License
+	- Frontend views, covers e.g.: 1, 2, 5, 6, 8, 10, 11, 12
+* ECMAScript 2015: BSD License
+	- Frontend animations e.g.: 1, 2, 5, 6, 8, 10, 11, 12
+* Tomcat: Apache 2.0
