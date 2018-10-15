@@ -22,7 +22,7 @@ public class CSVController {
         String exportFileName = null;
         try {
             exportFileName = createRandomFileName();
-            CSVWriter writer = new CSVWriter(new FileWriter("./exportedFiles/csv/"+exportFileName+".csv"));
+            CSVWriter writer = new CSVWriter(new FileWriter("./exportedFiles/csv/"+exportFileName+".csv"), CSVWriter.DEFAULT_SEPARATOR, CSVWriter.NO_QUOTE_CHARACTER);
             writer.writeAll(rs, true);
             writer.close();
             return exportFileName;

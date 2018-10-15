@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ea4566-76a4-4bb7-a00c-60030eeeb88f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/StetsonUniversity_CourseSchedule.iml" afterPath="$PROJECT_DIR$/.idea/StetsonUniversity_CourseSchedule.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java" afterPath="$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/controller/EXAMPLE_DATABASE_CLASS.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/IDbController.java" afterPath="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/IDbController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +23,8 @@
       <file leaf-file-name="CSVController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+            <state relative-caret-position="336">
+              <caret line="24" column="117" lean-forward="false" selection-start-line="24" selection-start-column="117" selection-end-line="24" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -528,7 +522,7 @@
       <workItem from="1539183273023" duration="2895000" />
       <workItem from="1539186501207" duration="123000" />
       <workItem from="1539356905950" duration="2431000" />
-      <workItem from="1539615794144" duration="2447000" />
+      <workItem from="1539615794144" duration="2746000" />
     </task>
     <servers />
   </component>
@@ -557,18 +551,19 @@
     <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.10.15 at 17h 43m 22s.xml">
       <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DbControllerTest_executeQuerySync - 2018.10.12 at 17h 38m 12s.xml">
-      <configuration name="DbControllerTest.executeQuerySync" configurationId="JUnit" />
+    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.10.15 at 17h 50m 18s.xml">
+      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
     <history-entry file="DbControllerTest_executeQuerySync - 2018.10.12 at 17h 38m 50s.xml">
       <configuration name="DbControllerTest.executeQuerySync" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47565000" />
+    <option name="totallyTimeSpent" value="47864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cargo" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -589,9 +584,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34583822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34583822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3270809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22771214" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -916,17 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="48" column="88" lean-forward="false" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
-          <folding>
-            <element signature="e#1656#1657#0" expanded="false" />
-            <element signature="e#2874#2875#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/EXAMPLE_DATABASE_CLASS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -967,10 +951,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="48" column="87" lean-forward="true" selection-start-line="48" selection-start-column="87" selection-end-line="48" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="51" lean-forward="false" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        <state relative-caret-position="336">
+          <caret line="24" column="117" lean-forward="false" selection-start-line="24" selection-start-column="117" selection-end-line="24" selection-end-column="117" />
           <folding />
         </state>
       </provider>
