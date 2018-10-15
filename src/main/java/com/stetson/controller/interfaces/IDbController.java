@@ -1,8 +1,5 @@
 package com.stetson.controller.interfaces;
 
-import com.sun.istack.internal.Nullable;
-
-import java.sql.Connection;
 import java.sql.ResultSet;
 
 public interface IDbController {
@@ -11,7 +8,7 @@ public interface IDbController {
     /** Do sth. with the result. ResultSet might be null in case we executed just a statement.*
      * Working now with asyncresults!*/
     interface GotQueryResult {
-        void onSuccess(@Nullable ResultSet rs);
+        void onSuccess(ResultSet rs);
         void onFailure();
     }
 }
