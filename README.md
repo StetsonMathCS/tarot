@@ -1,15 +1,2 @@
 # tarot
-
-
-
-
-
-
-
-
-
-
-
-
-
 Mikhail Maksimov
