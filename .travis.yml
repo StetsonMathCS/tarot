@@ -1,9 +1,13 @@
-language:
-    - java
+
+language: java
+jdk: oraclejdk8
+sudo: false # speeds up builds
+script: 
+  - mvn test # runs junit testcases
+
 
 services: 
     - mysql
     
 before_install:
     - mysql -e 'CREATE DATABASE IF NOT EXISTS tarot;'
-    
