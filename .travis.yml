@@ -4,3 +4,4 @@ services:
     
 before_install:
     - mysql -e 'CREATE DATABASE IF NOT EXISTS tarot;'
+    
