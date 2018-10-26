@@ -2,23 +2,36 @@ package com.stetson.controller;
 
 import com.stetson.controller.interfaces.IDbController;
 import org.junit.jupiter.api.*;
+import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mock.web.MockHttpServletRequest;
+import org.springframework.mock.web.MockHttpServletResponse;
+import org.springframework.mock.web.MockServletContext;
 
+import javax.servlet.ServletContext;
 import java.sql.ResultSet;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Created by IntelliJ IDEA.
- * User: kevin
- * Date: 15.10.2018
- * Time: 17:18
- */
 class CSVControllerTest {
+    @Mock
+    private static MockHttpServletRequest mockHttpServletRequest;
+    @Mock
+    private static MockHttpServletResponse mockHttpServletResponse;
+
     private static DbController dbController;
+    private static CSVController csvController;
 
     @BeforeAll
     static void setUp() {
         dbController = new DbController();
+        csvController = new CSVController();
+    }
+
+    @BeforeEach
+    void setUpEach() {
+        mockHttpServletRequest = new MockHttpServletRequest();
+        mockHttpServletResponse = new MockHttpServletResponse();
     }
 
     @AfterAll
@@ -31,8 +44,11 @@ class CSVControllerTest {
         dbController.executeQueryAsync("SHOW DATABASES;", new IDbController.GotQueryResult() {
             @Override
             public void onSuccess(ResultSet rs) {
-                if (CSVController.exportResultSetToCSV(rs) == null) {
+                String csvExportRs = CSVController.exportResultSetToCSV(rs);
+                if (csvExportRs == null) {
                     fail("Could not export csv.");
+                } else {
+                    System.out.println("Test->exportResultSetToCSV: Exported csv into "+csvExportRs);
                 }
             }
 
@@ -42,4 +58,11 @@ class CSVControllerTest {
             }
         });
     }
+
+    /* Method works, but test does not yet
+    @Test
+    void downloadCsvResource() {
+        mockHttpServletRequest.setAttribute("fileName","06ec2ac3-f63d-47c6-bdfa-e7448ad05d71");
+        csvController.downloadCsvResource(mockHttpServletRequest,mockHttpServletResponse,mockHttpServletRequest.getAttribute("fileName").toString());
+    }*/
 }
