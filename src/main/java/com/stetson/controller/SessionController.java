@@ -20,7 +20,7 @@ import static com.stetson.controller.interfaces.ISessionController.SESS_NAME;
 
 @Controller
 public class SessionController {
-    @RequestMapping(value = "index", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(ModelMap model) {
         //"message" is an ttribute in "hello.jsp", "hello.jsp" is created by yourself
         model.addAttribute("userName", System.getProperty("user.name").toUpperCase());
@@ -36,7 +36,6 @@ public class SessionController {
     @RequestMapping(value = "logout", method = RequestMethod.GET)
     public String logout(HttpSession session) {
         session.removeAttribute(SESS_NAME);
-        //return "redirect:../account";
         return "login";
     }
 
@@ -48,7 +47,7 @@ public class SessionController {
             req.getSession().setAttribute(SESS_NAME, ITemporaryConstants.SESS_TOKEN);
             System.out.println("SessionController:login: Session set.");
             try {
-                resp.sendRedirect("/index");
+                resp.sendRedirect("/");
             } catch (IOException e) {
                 System.err.println("SessionController:login: Could not redirect to index. Just nested view inside login page.");
                 e.printStackTrace();
