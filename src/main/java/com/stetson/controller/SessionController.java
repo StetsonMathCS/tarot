@@ -28,6 +28,11 @@ public class SessionController {
         return "index";
     }
 
+    @RequestMapping(value = "generator", method = RequestMethod.GET)
+    public String generator() {
+        return "generator";
+    }
+
     @RequestMapping(value = "login", method = RequestMethod.GET)
     public String login() {
         return "login";

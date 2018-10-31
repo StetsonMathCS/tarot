@@ -25,4 +25,6 @@
             <bean id="sessionInterceptor" class="com.stetson.interceptors.SessionInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+    <mvc:annotation-driven />
 </beans>

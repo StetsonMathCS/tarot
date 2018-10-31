@@ -12,7 +12,7 @@
     <jsp:include page="./headers/analytics.jsp"/>
 </head>
 <body>
-    <h3>Login Page</h3>
+    <h3>Login Page h2i</h3>
 ${error }
 <form method="post" action="${pageContext.request.contextPath }/login">
     <label for="accessToken">Access Token</label>
