@@ -18,6 +18,6 @@ Additional logs:
 16 [X] Dockerize
 17 [X] JUnit tests
 
-18 [ ] Merge code with Bailey
-19 [X] hook into real db (only localhost but outside of docker)
+18 [X] Merge code with Bailey
+19 [ ] hook into real db (only localhost but outside of docker) --> Isabels mysql service maybe not running?
 20 [ ] parse data from CPlex directly (algo guys)
