@@ -19,5 +19,5 @@ Additional logs:
 17 [X] JUnit tests
 
 18 [X] Merge code with Bailey
-19 [ ] hook into real db (only localhost but outside of docker) --> Isabels mysql service maybe not running?
+19 [ ] hook into real db (only localhost but outside of docker) --> mysql port of host mapping (see update_script) BUT also publish public ports (bc. they are discarded with that)
 20 [ ] parse data from CPlex directly (algo guys)
