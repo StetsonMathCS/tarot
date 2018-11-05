@@ -14,6 +14,5 @@ LABEL version="1.0.0" \
 
 
 # Possible improvement: Wget in cmd, so new war fetched on container start! (but container stops, why?)
-RUN rm -rf /usr/local/tomcat/webapps/ROOT && \
-    value=`cat conf/server.xml` && echo "${value//8080/80}" >| conf/server.xml
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
 ADD https://github.com/wsdt/tarot/raw/master/target/spring/ROOT.war /usr/local/tomcat/webapps/ROOT.war
