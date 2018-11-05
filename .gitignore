@@ -1,3 +1,6 @@
+# Do not upload db access
+/src/main/java/com/stetson/controller/interfaces/IDbController.java
+
 #/.idea/ --> UPLOAD it
 
 # Compiled class file

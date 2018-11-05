@@ -1,7 +1,7 @@
-1 [ ] As a regular user of the application, I want to receive a simple error page if sth. went wrong so potential user might find a solution for that issue. 
+1 [X] As a regular user of the application, I want to receive a simple error page if sth. went wrong so potential user might find a solution for that issue. 
 2 [X] As a regular user of the application, I want to login via a password/pin without having separate users in the backend so that there is no issue in managing different accounts.
 3 [ ] As a regular user of the application, I want to be able to share my generated data via an unique link (e.g. by generating a hash of that file and using that hash as a get-param) so that there are no complications in getting the generated file from A to B. 
-4 [ ] As a regular user of the application, I want to be able to download the generated file as e.g. a CSV-file so that files don't necessarily need to be shared via a link. 
+4 [X] As a regular user of the application, I want to be able to download the generated file as e.g. a CSV-file so that files don't necessarily need to be shared via a link. 
 5 [ ] As a regular user of the application, I want to select all constraints on a single/the same page so that I have a good overview of what data I want to generate. 
 6 [ ] As a regular user of the application, I want to have the constraint view and the result view (= generated data) separated (different pages -> two step interface), so that I won't get confused when my generated data appears. 
 7 [X] As a regular user of the application, I want some sort of session handling (implement some sort of middleware), so that I won't need to login again after every click.
@@ -15,3 +15,9 @@ Additional logs:
 13 [X] Generate db connection
 14 [X] Tomcat logs should be accessible outside of docker
 15 [X] Add analytics scripts. 
+16 [X] Dockerize
+17 [X] JUnit tests
+
+18 [X] Merge code with Bailey
+19 [X] hook into real db (only localhost but outside of docker) --> mysql port of host mapping (see update_script) BUT also publish public ports (bc. they are discarded with that)
+20 [ ] parse data from CPlex directly (algo guys)
