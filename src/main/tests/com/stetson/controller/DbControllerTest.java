@@ -65,7 +65,7 @@ class DbControllerTest {
 
 
     @Test
-    void executeQueryAsync() throws ExecutionException, InterruptedException, SQLException {
+    void executeQueryAsync() throws ExecutionException, InterruptedException, SQLException, IOException {
         dbController.executeQueryAsync("SHOW DATABASES;", dbCallback);
     }
 }

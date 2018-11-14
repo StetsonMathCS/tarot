@@ -4,6 +4,7 @@ import com.stetson.controller.interfaces.IDbController;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
 
+import java.io.IOException;
 import java.sql.*;
 // DO NOT IMPORT com.mysql.jdbc.* (broken implementations)
 

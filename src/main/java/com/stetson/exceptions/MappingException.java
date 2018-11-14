@@ -2,9 +2,9 @@ package com.stetson.exceptions;
 
 import java.io.IOException;
 
-/** Exception used for RowMap.class for example, which tries to load data from Db into memory and
+/** Exception used for DbRowMap.class for example, which tries to load data from Db into memory and
  * tries to map it.*/
-public class MappingException extends IOException {
+public class MappingException extends RuntimeException {
     public MappingException(String message, Throwable cause) {
         super(message, cause);
     }
