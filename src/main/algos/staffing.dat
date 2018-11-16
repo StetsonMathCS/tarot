@@ -1,0 +1,36 @@
+
+
+// To assign a professor to teach a course in a specific time (Exmple)
+PeriodAssigned = 1;
+WeekdayAssigned = {Mon, Wed};
+ProfessorAssigned = "Eckroth";
+RoomAssigned = "Room1";
+CourseAssigned = "Database Systems";
+
+totalPeriods=5;
+totalStudents = 100;
+NbPeriods=4;
+maxStudents = 25;
+
+
+Weekdays={Mon, Wed, Fri};
+Professors= {"Eckroth", "Plante", "ElAarag", "Koc", "TBA"};
+Courses= {"Database Systems", "Web App", "Big Data", "Senior P1", "Senior P2", "Intro to Computing", 
+		"Intro to Comp1", "Intro to Comp1", "Intro to Comp2", "Discrete Structures", "Soft Dev1", "Operating Systems", 
+		"Computer Networks", "Computer Graphics", "Senior R1", "Senior R2"};
+
+Duration= {50, 50, 50, 0, 0, 75, 50, 50, 50, 50, 50, 50, 50, 50, 0};
+
+Rooms = {"Room1", "Room2", "Room3", "Room4", "Room5", "empty", "Lab1", "Lab2"};
+//Labs = {"Lab1", "Lab2"};
+
+
+//Shifts= { 8to12, 12to4, 4to8};
+
+ProfCourses = { 
+ <Eckroth, {DatabaseSystems,BigData, SoftDev1}>//, {50, 50, 50}>, 
+ <Plante, {WebApp, SeniorP1, SeniorP2, IntrotoComp2, SeniorR1, SeniorR2}>//, {50, 0, 0, 50, 0, 0}>, 
+ <ElAarag,{DiscreteStructures, OperatingSystems, ComputerNetworks}>//, {50, 50, 50}>,
+ <Koc,{IntrotoComp1, ComputerGraphics}>//, {50, 50}>, 
+ <TBA, {IntrotoComputing,IntrotoComp1}>//, {75, 50}>
+};
