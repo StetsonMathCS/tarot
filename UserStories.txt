@@ -20,6 +20,6 @@ Additional logs:
 
 18 [X] Merge code with Bailey
 19 [X] hook into real db (only localhost but outside of docker)
-20 [ ] parse data from CPlex directly (algo guys) -> currently Json?!!
-21 [ ] rowMap HashMap load Data from Db and save back (mapping). HashMap is enough. 
+20 [X] parse data from CPlex directly (algo guys) -> currently Json?!!
+21 [X] rowMap HashMap load Data from Db and save back (mapping). HashMap is enough. 
 ---> 

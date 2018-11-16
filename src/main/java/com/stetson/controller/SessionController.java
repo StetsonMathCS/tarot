@@ -20,7 +20,7 @@ import static com.stetson.controller.interfaces.ISessionController.SESS_NAME;
 
 @Controller
 public class SessionController {
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = {"/","/index"}, method = RequestMethod.GET)
     public String index(ModelMap model) {
         //"message" is an ttribute in "hello.jsp", "hello.jsp" is created by yourself
         model.addAttribute("userName", System.getProperty("user.name").toUpperCase());
