@@ -4,8 +4,8 @@
     <title>Tarot | Generator</title>
     <jsp:include page="./headers/analytics.jsp"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></head>
-    <link href="../../resources/css/styles.css" rel="stylesheet" type="text/css">
-    <script src="../../resources/js/tarot.js"></script>
+    <link href="resources/css/styles.css" rel="stylesheet" type="text/css">
+    <script src="resources/js/tarot.js"></script>
 <body>
     <h3>Generator Page</h3>
     <nav class="navbar p-3 pr-5 pl-5">

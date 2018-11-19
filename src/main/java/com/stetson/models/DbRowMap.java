@@ -126,6 +126,7 @@ public class DbRowMap extends HashMap<String, ArrayList<DbVal>> {
         });
     }
 
+    //TODO: BAD PRACTICE TO WRITE OWN SECURITY STANDARDS!!!!!!!
     private static String sqlInjection(String str) {
         if (str == null || str.matches(".*['*+~,;\"].*")) {
             throw new MappingException("DbRowMap:setTableName: Tablename consists illegal characters!");
