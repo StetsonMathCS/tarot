@@ -23,8 +23,6 @@
 
     <mvc:annotation-driven />
 
-<!---     <mvc:resources mapping="/res/**" location="/WEB-INF/res/"
-                   cache-period="10000"/> -->
 
     <mvc:interceptors>
         <mvc:interceptor>
