@@ -1,5 +1,6 @@
 package com.stetson.models;
 
+import com.stetson.controller.CPlexController;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 
@@ -11,6 +12,7 @@ import java.nio.file.Paths;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CPlexObjTest {
+    private static CPlexController cPlexController = new CPlexController();
 
     @Test
     public void parseCplex() {
@@ -22,6 +24,13 @@ class CPlexObjTest {
         } catch (IOException e) {
             fail("test:CPlexObjTest:parseCplex: Could not parse cplex.");
             e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void parseCplexJson() {
+        try {
+
         }
     }
 
