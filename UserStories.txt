@@ -23,4 +23,4 @@ Additional logs:
 20 [X] parse data from CPlex directly (algo guys) -> currently Json?!!
 21 [X] rowMap HashMap load Data from Db and save back (mapping). HashMap is enough. 
 
-22 [ ] show CPLEX data result as table and make it downloadable as csv (shareable via hashed link). just put column names above parsed cplex data. 
+22 [ ] show CPLEX data result as table and make it downloadable as csv (shareable via hashed link). PARSE REALLY, shorten table, human readable etc.

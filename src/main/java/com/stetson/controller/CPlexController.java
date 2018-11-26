@@ -10,11 +10,10 @@ import java.nio.file.Paths;
 
 public class CPlexController {
 
-    public static JSONArray parseJsonData(String file) throws IOException {
+    public static JSONObject parseJsonData(String file) throws IOException {
         byte[] encoded = Files.readAllBytes(Paths.get(file));
-        return new JSONArray(new String(encoded, Charset.defaultCharset()));
+        return new JSONObject(new String(encoded, Charset.defaultCharset()));
     }
-
 
 
 }

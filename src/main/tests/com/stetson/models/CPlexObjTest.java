@@ -12,8 +12,6 @@ import java.nio.file.Paths;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CPlexObjTest {
-    private static CPlexController cPlexController = new CPlexController();
-
     @Test
     public void parseCplex() {
         byte[] encoded;
@@ -21,16 +19,10 @@ class CPlexObjTest {
             encoded = Files.readAllBytes(Paths.get("./src/main/tests/com/stetson/models/cplex_test/cplex_output.txt"));
             CPlexObj cPlexObj = new CPlexObj(new String(encoded, Charset.defaultCharset()));
             System.out.println("test:CPlexObjTest:parseCplex: Parsing successful -> "+cPlexObj.getParsedCplexData().toString());
+            System.out.println(cPlexObj.convertToReadableFormat(CPlexObj.ConvertFormat.CSV));
         } catch (IOException e) {
             fail("test:CPlexObjTest:parseCplex: Could not parse cplex.");
             e.printStackTrace();
-        }
-    }
-
-    @Test
-    public void parseCplexJson() {
-        try {
-
         }
     }
 
