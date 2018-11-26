@@ -6,7 +6,6 @@ int totalStudents = ...; // Total # of students
 int maxStudents = ...; // Max # of students per class
 int numRooms = 8;
 
-{int} Duration = ...; // Duration of a class
 range Periods = 1..totalPeriods; 
 range Students = 1..totalStudents;
 int PeriodAssigned = ...;
@@ -64,8 +63,8 @@ maximize sum(j in Professors, c in Courses, r in Rooms, w in Weekdays, p in Peri
 
 subject to {
 // To assign a professor to teach a course in a specific time and room
-//	forall(w in WeekdayAssigned)
-//		sum(p in Periods, r in Rooms, j in Professors, c in Courses) Assign[w][p][r][j][c] == 1;
+	forall(w in WeekdayAssigned)
+		Assign[w][PeriodAssigned][RoomAssigned][ProfessorAssigned][CourseAssigned] == 1;
 //   forall(w in Weekdays, p in Periods, r in Rooms, c in Courses)  //only 1 professor per room/period 
 //       sum(j in Professors)
 //         Assign[w][p][r][j][c] == 1;
@@ -77,7 +76,7 @@ forall(c in Courses)
 	sum(j in Professors) X[j, c] == 1;
 	
 forall(w in Weekdays, p in Periods, r in Rooms)
-  sum(j in Professors, c in Courses) Assign[w][p][r][j][c] <= 1;
+   sum(j in Professors, c in Courses) Assign[w][p][r][j][c] <= 1;
 //One prof/course combo per timeslot
   
   forall (w in Weekdays, p in Periods, r in Rooms)
