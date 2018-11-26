@@ -7,11 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ea4566-76a4-4bb7-a00c-60030eeeb88f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/UserStories.txt" afterPath="$PROJECT_DIR$/UserStories.txt" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/controller/CPlexController.java" afterPath="$PROJECT_DIR$/src/main/java/com/stetson/controller/CPlexController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/models/CPlexObj.java" afterPath="$PROJECT_DIR$/src/main/java/com/stetson/models/CPlexObj.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/tests/com/stetson/models/CPlexObjTest.java" afterPath="$PROJECT_DIR$/src/main/tests/com/stetson/models/CPlexObjTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java" afterPath="$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stetson/models/DbRowMap.java" afterPath="$PROJECT_DIR$/src/main/java/com/stetson/models/DbRowMap.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java" afterPath="$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java" afterPath="$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/tests/com/stetson/models/DbRowMapTest.java" afterPath="$PROJECT_DIR$/src/main/tests/com/stetson/models/DbRowMapTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,17 +37,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CPlexObj.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/models/CPlexObj.java">
+      <file leaf-file-name="DbRowMap.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/models/DbRowMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="91" column="37" lean-forward="true" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+            <state relative-caret-position="373">
+              <caret line="111" column="95" lean-forward="false" selection-start-line="111" selection-start-column="95" selection-end-line="111" selection-end-column="95" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6979#6980#0" expanded="true" />
-                <element signature="e#7017#7018#0" expanded="true" />
-                <element signature="e#7082#7083#0" expanded="true" />
-                <element signature="e#7136#7137#0" expanded="true" />
+                <element signature="e#5810#5811#0" expanded="true" />
+                <element signature="e#5847#5848#0" expanded="true" />
+                <marker date="1543250394393" expanded="true" signature="3712:3726" ph="SELECT * FRO... missingValue" />
               </folding>
             </state>
           </provider>
@@ -95,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/stetson/ListenerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/SessionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/TemporaryConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/interceptors/SessionInterceptor.java" />
@@ -109,7 +107,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/ErrorController.java" />
         <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/ErrorControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/CSVController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/files/cplex/dat/staffing.dat" />
         <option value="$PROJECT_DIR$/src/main/webapp/files/cplex/mod/staffing.mod" />
@@ -123,9 +120,7 @@
         <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/json_test/test.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/models/TestEntity.java" />
         <option value="$PROJECT_DIR$/server.xml" />
-        <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/exceptions/MappingException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/models/DbVal.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/models/RowMap.java" />
         <option value="$PROJECT_DIR$/src/main/tests/com/stetson/models/RowMapTest.java" />
@@ -135,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/IDbController_TEMPLATE.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/IDbController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/SessionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/stetson/models/DbRowMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/d.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/k.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/generator.jsp" />
@@ -146,6 +140,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/models/interfaces/ICPlexObj.java" />
         <option value="$PROJECT_DIR$/src/main/tests/com/stetson/models/CPlexObjTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/models/CPlexObj.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java" />
+        <option value="$PROJECT_DIR$/src/main/tests/com/stetson/models/DbRowMapTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/stetson/models/DbRowMap.java" />
       </list>
     </option>
   </component>
@@ -185,7 +184,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+    <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
@@ -457,7 +456,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CPlexObjTest">
+  <component name="RunManager" selected="JUnit.All in StetsonUniversity_CourseSchedule">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -668,8 +667,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CPlexObjTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in StetsonUniversity_CourseSchedule" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in StetsonUniversity_CourseSchedule" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CPlexObjTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.DbRowMapTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.DbControllerTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CPlexControllerTest" />
@@ -745,25 +744,25 @@
       <workItem from="1542643393488" duration="3724000" />
       <workItem from="1542652459077" duration="70000" />
       <workItem from="1542677967347" duration="8030000" />
-      <workItem from="1543248211278" duration="750000" />
+      <workItem from="1543248211278" duration="2211000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CPlexObjTest - 2018.11.20 at 04h 35m 24s.xml">
-      <configuration name="CPlexObjTest" configurationId="JUnit" />
+    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.11.26 at 17h 33m 49s.xml">
+      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CPlexObjTest - 2018.11.20 at 04h 46m 14s.xml">
-      <configuration name="CPlexObjTest" configurationId="JUnit" />
+    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.11.26 at 17h 34m 03s.xml">
+      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CPlexObjTest - 2018.11.20 at 04h 46m 42s.xml">
-      <configuration name="CPlexObjTest" configurationId="JUnit" />
+    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.11.26 at 17h 34m 57s.xml">
+      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CPlexObjTest - 2018.11.26 at 17h 06m 32s.xml">
-      <configuration name="CPlexObjTest" configurationId="JUnit" />
+    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.11.26 at 17h 38m 59s.xml">
+      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CPlexObjTest - 2018.11.26 at 17h 11m 45s.xml">
-      <configuration name="CPlexObjTest" configurationId="JUnit" />
+    <history-entry file="All_in_StetsonUniversity_CourseSchedule - 2018.11.26 at 17h 39m 59s.xml">
+      <configuration name="All in StetsonUniversity_CourseSchedule" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CPlexObjTest - 2018.11.26 at 17h 12m 12s.xml">
       <configuration name="CPlexObjTest" configurationId="JUnit" />
@@ -782,7 +781,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109752000" />
+    <option name="totallyTimeSpent" value="111213000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -808,10 +807,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.85814774" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5556858" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32121924" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22824919" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19978517" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -935,13 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_181/src.zip!/java/io/IOException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
@@ -956,24 +948,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/models/DbVal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/models/DbRowMapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -997,13 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="35" column="66" lean-forward="false" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -1096,14 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/models/DbRowMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2541">
-          <caret line="128" column="63" lean-forward="false" selection-start-line="128" selection-start-column="63" selection-end-line="128" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/CPlexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1138,6 +1101,54 @@
             <element signature="e#7017#7018#0" expanded="true" />
             <element signature="e#7082#7083#0" expanded="true" />
             <element signature="e#7136#7137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/controller/DbControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="70" column="43" lean-forward="false" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/controller/CSVControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="45" column="60" lean-forward="false" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/DbController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+          <folding>
+            <element signature="e#2606#2607#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/models/DbRowMapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/models/DbRowMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="111" column="95" lean-forward="false" selection-start-line="111" selection-start-column="95" selection-end-line="111" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5810#5811#0" expanded="true" />
+            <element signature="e#5847#5848#0" expanded="true" />
+            <marker date="1543250394393" expanded="true" signature="3712:3726" ph="SELECT * FRO... missingValue" />
           </folding>
         </state>
       </provider>

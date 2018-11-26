@@ -5,27 +5,22 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Created by IntelliJ IDEA.
- * User: kevin
- * Date: 14.11.2018
- * Time: 17:20
- */
 class DbRowMapTest {
     private DbRowMap dbRowMap;
 
     @BeforeEach
-    void setupEach() {
+    void setupEach() throws SQLException {
         dbRowMap = new DbRowMap("time");
     }
 
     @Test
-    void loadFromDb() {
+    void loadFromDb() throws SQLException {
         dbRowMap.loadFromDb(new IDbController.GotQueryResult() {
             @Override
             public void onSuccess(ResultSet rs) {
@@ -48,7 +43,7 @@ class DbRowMapTest {
     }
 
     @Test
-    void saveToDb() {
+    void saveToDb() throws SQLException {
         // UNCOMMEND, if you want to change dbRowMap before saving (MODIFIES REAL DATABASE!)
         ArrayList<DbVal> list = new ArrayList<>();
         //list.add(new DbVal("9999999999"));

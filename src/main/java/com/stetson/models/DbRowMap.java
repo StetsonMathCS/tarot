@@ -1,27 +1,25 @@
 package com.stetson.models;
 
-import com.stetson.controller.DbController;
-import com.stetson.controller.interfaces.IDbController;
-import com.stetson.exceptions.MappingException;
+        import com.stetson.controller.DbController;
+        import com.stetson.controller.interfaces.IDbController;
+        import com.stetson.exceptions.MappingException;
 
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.util.*;
+        import java.sql.PreparedStatement;
+        import java.sql.ResultSet;
+        import java.sql.ResultSetMetaData;
+        import java.sql.SQLException;
+        import java.util.*;
 
 /** ArrayList = Cols without col_names / String row-Id
  * String = Row, Primary Key
  * ArrayList<DbVal> = Values of all columns (incl. primary key)!.
  * */
 public class DbRowMap extends HashMap<String, ArrayList<DbVal>> {
-
-
-
     private static final DbController dbController = new DbController();
     /** SQL-Table name necessary to save/reload data from database. */
     private String tableName;
 
-    public DbRowMap(String tableName) throws MappingException {
+    public DbRowMap(String tableName) throws SQLException,MappingException {
         this.setTableName(tableName);
         this.loadFromDb(new IDbController.GotQueryResult() {
             @Override
@@ -36,7 +34,7 @@ public class DbRowMap extends HashMap<String, ArrayList<DbVal>> {
             }
         });
     }
-    
+
     private void mapResultsetToRowMap(ResultSet rs) {
         try {
             ResultSetMetaData meta = rs.getMetaData();
@@ -89,8 +87,11 @@ public class DbRowMap extends HashMap<String, ArrayList<DbVal>> {
     }
 
     /** (Re)loads rowMap from Database and discards current version. */
-    public void loadFromDb(final IDbController.GotQueryResult gotQueryResult) throws MappingException {
-        DbRowMap.dbController.executeQueryAsync("SELECT * FROM "+this.getTableName()+";", new IDbController.GotQueryResult() {
+    public void loadFromDb(final IDbController.GotQueryResult gotQueryResult) throws SQLException,MappingException {
+        //Tablename cannot be used in prepared statement
+        PreparedStatement stmt = DbRowMap.dbController.getConn().prepareStatement("SELECT * FROM "+this.getTableName()+";");
+
+        DbRowMap.dbController.executeQueryAsync(stmt, new IDbController.GotQueryResult() {
             @Override
             public void onSuccess(ResultSet rs) {
                 mapResultsetToRowMap(rs);
@@ -107,9 +108,11 @@ public class DbRowMap extends HashMap<String, ArrayList<DbVal>> {
     }
 
     /** Save (modified) rowMap into Db. Value gets overwritten. */
-    public void saveToDb(final IDbController.GotQueryResult gotQueryResult) throws MappingException {
+    public void saveToDb(final IDbController.GotQueryResult gotQueryResult) throws MappingException, SQLException {
+        //also mapRowToValueList gives static response and cannot be used in prepared statement
+        PreparedStatement stmt = DbRowMap.dbController.getConn().prepareStatement("REPLACE INTO "+this.getTableName()+" VALUES "+this.mapRowMapToValueList()+";");
 
-        DbRowMap.dbController.executeQueryAsync("REPLACE INTO "+this.getTableName()+" VALUES "+this.mapRowMapToValueList()+";", new IDbController.GotQueryResult() {
+        DbRowMap.dbController.executeQueryAsync(stmt, new IDbController.GotQueryResult() {
             @Override
             public void onSuccess(ResultSet rs) {
                 //Database already updated with replace statement.
@@ -126,7 +129,7 @@ public class DbRowMap extends HashMap<String, ArrayList<DbVal>> {
         });
     }
 
-    //TODO: BAD PRACTICE TO WRITE OWN SECURITY STANDARDS!!!!!!!
+    //Necessary for table Name as not useable in prepared statement
     private static String sqlInjection(String str) {
         if (str == null || str.matches(".*['*+~,;\"].*")) {
             throw new MappingException("DbRowMap:setTableName: Tablename consists illegal characters!");
@@ -140,6 +143,6 @@ public class DbRowMap extends HashMap<String, ArrayList<DbVal>> {
     }
 
     public void setTableName(String tableName) throws MappingException {
-            this.tableName = sqlInjection(tableName);
+        this.tableName = sqlInjection(tableName);
     }
 }

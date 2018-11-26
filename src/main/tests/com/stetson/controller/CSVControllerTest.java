@@ -9,7 +9,9 @@ import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.mock.web.MockServletContext;
 
 import javax.servlet.ServletContext;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -40,8 +42,9 @@ class CSVControllerTest {
     }
 
     @Test
-    void exportResultSetToCSV() {
-        dbController.executeQueryAsync("SHOW DATABASES;", new IDbController.GotQueryResult() {
+    void exportResultSetToCSV() throws SQLException {
+        PreparedStatement stmt = dbController.getConn().prepareStatement("SHOW DATABASES;");
+        dbController.executeQueryAsync(stmt, new IDbController.GotQueryResult() {
             @Override
             public void onSuccess(ResultSet rs) {
                 String csvExportRs = CSVController.exportResultSetToCSV(rs);

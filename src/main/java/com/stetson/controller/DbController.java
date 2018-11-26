@@ -4,7 +4,6 @@ import com.stetson.controller.interfaces.IDbController;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.EnableAsync;
 
-import java.io.IOException;
 import java.sql.*;
 // DO NOT IMPORT com.mysql.jdbc.* (broken implementations)
 
@@ -33,7 +32,7 @@ public class DbController {
 
     private void connect() {
         try {
-            this.conn = DriverManager.getConnection(IDbController.DB_CONNECTION_STRING);
+            this.conn = (DriverManager.getConnection(IDbController.DB_CONNECTION_STRING));
         } catch (SQLException e) {
             System.err.println("SQLException: "+e.getMessage()+
                     "\nSQLState: "+e.getSQLState()+
@@ -44,17 +43,14 @@ public class DbController {
 
     //TODO: Need mapping method which receives ResultSet and returns e.g. mappedObject.
     @Async
-    public void executeQueryAsync(String query, IDbController.GotQueryResult callback) {
-        Statement stmt = null;
+    public void executeQueryAsync(PreparedStatement stmt, IDbController.GotQueryResult callback) {
         ResultSet rs = null;
 
         try {
-            stmt = this.conn.createStatement();
+            //stmt = this.conn.createStatement();
 
             //as we don't know if we have a query or sth else
-            if (stmt.execute(query)) {
-                rs = stmt.getResultSet();
-            }
+            rs = stmt.executeQuery();
             callback.onSuccess(rs); //might be NULL!
         } catch (SQLException e) {
             System.out.println("SQLException: " + e.getMessage());
@@ -85,4 +81,7 @@ public class DbController {
     }
 
 
+    public Connection getConn() {
+        return conn;
+    }
 }
