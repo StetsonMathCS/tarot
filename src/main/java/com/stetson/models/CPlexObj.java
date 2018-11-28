@@ -2,11 +2,6 @@ package com.stetson.models;
 
 import com.stetson.exceptions.CPLEXException;
 import org.json.JSONArray;
-import org.json.JSONObject;
-
-import java.nio.charset.Charset;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -66,44 +61,46 @@ public class CPlexObj {
             String binaryArray = matcher.group(1)
                     .replaceAll("[ ]{2,}","")
                     .replaceAll("\\][ \\n\\r\\t]*\\[","],[")
-                    .replace(' ',',');
+                    .replace(' ',',')
+                    .replaceAll("\\n",","); //for last bug of new cplex file
 
+            System.out.println(binaryArray);
             this.setParsedCplexData(new JSONArray(binaryArray));
         }
     }
 
-    public String convertToReadableFormat(ConvertFormat type) {
+    public String convertToReadableFormat() {
         StringBuilder sbCourseList = new StringBuilder();
+        sbCourseList.append(INPUT.getString(0)); //add headers
+
+        //Assign[Weekdays][Periods][Rooms][Professors][Courses];
         JSONArray parsedCplexData = this.getParsedCplexData();
         for (int i = 0; i<parsedCplexData.length(); i++) {
             // Monday, Wednesday, Friday
-            JSONArray weekDayData = parsedCplexData.getJSONArray(i);
-            for (int j = 0; j<weekDayData.length();j++) {
-                // TeacherName:{List of courses (s)he does}
-                JSONArray profCourseData = weekDayData.getJSONArray(j);
-                for (int k = 0; k<profCourseData.length();k++) {
+            JSONArray periods = parsedCplexData.getJSONArray(i);
+            for (int j = 0; j<periods.length();j++) {
+                // Periods [0...4]
+                JSONArray roomData = periods.getJSONArray(j);
+                for (int k = 0; k<roomData.length();k++) {
                     // room1, room2,...
-                    JSONArray roomData = profCourseData.getJSONArray(k);
-                    for (int l = 0;l<roomData.length();l++) {
+                    JSONArray professorData = roomData.getJSONArray(k);
+                    for (int l = 0;l<professorData.length();l++) {
                         // eckroth, plante, elaarag, koc, tba..
-                        JSONArray professorData = roomData.getJSONArray(l);
+                        JSONArray courseData = professorData.getJSONArray(l);
 
-                        for (int m = 0; m<professorData.length();m++) {
+                        for (int m = 0; m<courseData.length();m++) {
                             // course
-                            JSONArray availableCourses = (JSONArray) INPUT.getJSONArray(1).get(j);
-                            if (professorData.get(m).equals(1)) {
-                                for (int n = 0; n < availableCourses.length(); n++) {
-                                    sbCourseList.append(INPUT.getJSONArray(0).get(i));
-                                    sbCourseList.append(";");
-                                    sbCourseList.append(availableCourses.get(n));
-                                    sbCourseList.append(";");
-                                    sbCourseList.append(INPUT.getJSONArray(2).get(k));
-                                    sbCourseList.append(";");
-                                    sbCourseList.append(INPUT.getJSONArray(3).get(l));
-                                    sbCourseList.append(";");
-                                    sbCourseList.append(INPUT.getJSONArray(4).get(m));
-                                    sbCourseList.append("\n");
-                                }
+                            if (courseData.get(m).equals(1)) {
+                                sbCourseList.append(INPUT.getJSONArray(1).get(i));
+                                sbCourseList.append(";");
+                                sbCourseList.append(j);
+                                sbCourseList.append(";");
+                                sbCourseList.append(INPUT.getJSONArray(2).get(k));
+                                sbCourseList.append(";");
+                                sbCourseList.append(INPUT.getJSONArray(3).get(l));
+                                sbCourseList.append(";");
+                                sbCourseList.append(INPUT.getJSONArray(4).get(m));
+                                sbCourseList.append("\n");
                             }
                         }
                     }
@@ -116,35 +113,8 @@ public class CPlexObj {
     private void initializeINPUT() {
         if (INPUT == null) {
             INPUT = new JSONArray();
-            INPUT.put(0,new JSONArray("[\"Monday\",\"Wednesday\",\"Friday\"]"));
-            // Eckroth, Plante, ElAarag, Koc, Tba (in that order)
-            INPUT.put(1,new JSONArray("[[" +
-                    "\"DatabaseSystems\"," +
-                    "\"BigData\"," +
-                    "\"SoftDev1\"" +
-                    "]," +
-                    "[" +
-                    "\"WebApp\"," +
-                    "\"SeniorP1\"," +
-                    "\"SeniorP2\"," +
-                    "\"IntrotoComp2\"," +
-                    "\"SeniorR1\"," +
-                    "\"SeniorR2\"" +
-                    "]," +
-                    "[" +
-                    "\"DiscreteStructures\"," +
-                    "\"OperatingSystems\"," +
-                    "\"ComputerNetworks\"" +
-                    "]," +
-                    "[" +
-                    "\"IntrotoComp1\"," +
-                    "\"ComputerGraphics\"" +
-                    "]," +
-                    "[" +
-                    "\"IntrotoComputing\"," +
-                    "\"IntrotoComp1\"" +
-                    "]" +
-                    "]"));
+            INPUT.put(0, "Weekday;Period;Room;Teacher;Class\n");
+            INPUT.put(1,new JSONArray("[\"Monday\",\"Wednesday\",\"Friday\"]"));
             INPUT.put(2, new JSONArray("[\"Room1\", \"Room2\", \"Room3\", \"Room4\", \"Room5\", \"empty\", \"Lab1\", \"Lab2\"]"));
             INPUT.put(3, new JSONArray("[\"Eckroth\", \"Plante\", \"ElAarag\", \"Koc\", \"TBA\"]"));
             INPUT.put(4, new JSONArray("[\"Database Systems\", \"Web App\", \"Big Data\", \"Senior P1\", \"Senior P2\", \"Intro to Computing\", \"Intro to Comp1\", \"Intro to Comp2\", \"Discrete Structures\", \"Soft Dev1\", \"Operating Systems\", \"Computer Networks\", \"Computer Graphics\", \"Senior R1\", \"Senior R2\"]"));
