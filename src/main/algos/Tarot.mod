@@ -9,24 +9,33 @@ int numRooms = 8;
 
 range Periods = 1..totalPeriods; 
 range Students = 1..totalStudents;
-int PeriodAssigned = ...;
-{string} WeekdayAssigned = ...;
-string ProfessorAssigned = ...;
-string RoomAssigned = ...;
-string CourseAssigned = ...;
 {string} Professors = ...;     // Set of Professors
 {string} Weekdays = ...;   // Set of work days 
 {string} Rooms = ...;     // Set of Rooms
 //{string} Labs = ...;	// Set of Labs
 {string} Courses = ...;    // Set of Courses
-int CoursePrefs[j in Professors][c in Courses] = 1;
+float CoursePrefs[j in Professors][c in Courses] = ...;
+float PeriodPrefs[p in Periods][c in Courses] = ...;
 // Data Structure
-tuple PCourse {
-  key string p;
-  {string} s;
- // {int} d;
+
+
+tuple LCourse {
+  key string LC;
+  int LP;
 }
-{PCourse} ProfCourses = ...; //  List of Professors for each course
+
+
+tuple Sign
+{
+int PA;
+{string} WA;
+string PrA;
+string RA;
+string CA;
+}
+
+{Sign} HardSign = ...;
+{LCourse} LongCourses = ...; //  List of Professors for each course
 int Penalty = card(Weekdays)*NbPeriods+1; // Penalty for an unfilled slot
 //********************************* Variables **********************************
         
@@ -41,7 +50,6 @@ dvar boolean W[Students][Courses];
 dvar boolean R[Courses][Rooms];
 dvar boolean Enroll [Students][Courses][Periods];		//student has course at period
 dvar boolean Occupy [Courses][Rooms][Periods];		//Course in room at period
-dvar boolean Teach [ProfCourses]; //Professor teaching course at period
 dvar boolean X[Professors][Courses];
 dvar boolean Y[Courses][Periods];
 dvar boolean Avail[Weekdays][Periods][Rooms][Courses];     // Indicates the availability of a room
@@ -55,7 +63,7 @@ dexpr int TotUnfilled  =
 //minimize sum (p in Periods) P[p];
 
 //maximize sum (c in Courses, p in Periods, r in Rooms) Occupy[c][r][p];
-maximize sum(j in Professors, c in Courses, r in Rooms, w in Weekdays, p in Periods) Assign[w,p,r,j,c]*CoursePrefs[j,c];
+maximize sum(j in Professors, c in Courses, r in Rooms, w in Weekdays, p in Periods) Assign[w,p,r,j,c]*CoursePrefs[j,c]*PeriodPrefs[p,c];
 
 //minimize 0;
 // Note:  Since the penalty is higher than the maximal 
@@ -64,8 +72,9 @@ maximize sum(j in Professors, c in Courses, r in Rooms, w in Weekdays, p in Peri
 
 subject to {
 // To assign a professor to teach a course in a specific time and room
-	forall(w in WeekdayAssigned)
-		Assign[w][PeriodAssigned][RoomAssigned][ProfessorAssigned][CourseAssigned] == 1;
+	forall(h in HardSign)
+		forall (w in h.WA) Assign[w][h.PA][h.RA][h.PrA][h.CA] ==1;
+	  
 //   forall(w in Weekdays, p in Periods, r in Rooms, c in Courses)  //only 1 professor per room/period 
 //       sum(j in Professors)
 //         Assign[w][p][r][j][c] == 1;
@@ -79,7 +88,12 @@ forall(c in Courses)
 forall(w in Weekdays, p in Periods, r in Rooms)
    sum(j in Professors, c in Courses) Assign[w][p][r][j][c] <= 1;
 //One prof/course combo per timeslot
+  forall (c in Courses, w in Weekdays)
+    sum (p in Periods, j in Professors, r in Rooms) Assign[w][p][r][j][c] == 1;
   
+	forall (w in Weekdays, c in Courses)
+	  sum (p in Periods, r in Rooms, j in Professors) Assign[w][p][r][j][c] <= 1;
+
   forall (w in Weekdays, p in Periods, r in Rooms)
     sum (c in Courses) Avail[w][p][r][c] == 1;
   
@@ -89,7 +103,6 @@ forall(w in Weekdays, p in Periods, r in Rooms)
  forall(j in Professors, w in Weekdays, p in Periods)
    	sum (c in Courses, r in Rooms) Assign[w][p][r][j][c] <= 1;
    	
-
 //each course in only one room
 forall(c in Courses) 
 	sum(r in Rooms) R[c, r] == 1;

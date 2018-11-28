@@ -1,11 +1,7 @@
 
 
 // To assign a professor to teach a course in a specific time (Exmple)
-PeriodAssigned = 1;
-WeekdayAssigned = {Mon, Wed, Fri};
-ProfessorAssigned = "Eckroth";
-RoomAssigned = "Room1";
-CourseAssigned = "Database Systems";
+
 
 totalPeriods=5;
 totalStudents = 100;
@@ -22,19 +18,18 @@ Courses= {"Database Systems", "Web App", "Big Data", "Senior P1", "Senior P2", "
 Rooms = {"Room1", "Room2", "Room3", "Room4", "Room5", "empty", "Lab1", "Lab2"};
 //Labs = {"Lab1", "Lab2"};
 
+HardSign = {<1,{Mon, Wed},"Eckroth","Room1","Database Systems">, <2,{Wed, Fri},"TBA", "Lab1", "Big Data">};
 
 //Shifts= { 8to12, 12to4, 4to8};
-CoursePrefs = [[1,0,1,0,0,0,0,0,0,0,1,0,0,0,0],
-				[0,1,0,1,1,0,0,1,0,0,0,0,0,1,1],
-				[0,0,0,0,0,0,0,0,1,0,1,1,0,0,0],
-				[0,0,0,0,0,0,1,0,0,0,0,0,1,0,0],
+CoursePrefs = [[1,0,1,0,0,0,0,0.9,0,1,0.9,0,0,0,0],
+				[0,1,0,0,0,0,0.9,1,0,0,0,0.9,0,0,0],
+				[0.9,0,0,0,0,0,0,0,1,0,1,1,0,0,0],
+				[0,0,0,0,0,0,1,0.9,0,0,0,0,1,0,0],
 				[0,0,0,0,0,1,1,0,0,0,0,0,0,0,0]];
+PeriodPrefs = [[1,1,1,1,1,0,1,1,1,1,1,0,1,1,1],
+				[1,1,1,1,1,0,1,1,1,1,1,0,1,1,1],
+				[1,1,1,1,1,0,1,1,1,1,1,0,1,1,1],
+				[1,1,1,1,1,0,1,1,1,1,1,0,1,1,1],
+				[0,0,0,0,0,1,0,0,0,0,0,1,0,0,0]];
 
-
-ProfCourses = {
- <Eckroth, {DatabaseSystems,BigData, SoftDev1}>,
- <Plante, {WebApp, SeniorP1, SeniorP2, IntrotoComp2, SeniorR1, SeniorR2}>,
- <ElAarag,{DiscreteStructures, OperatingSystems, ComputerNetworks}>,
- <Koc,{IntrotoComp1, ComputerGraphics}>,
- <TBA, {IntrotoComputing,IntrotoComp1}>,
-};
+LongCourses = {<"Computer Networks", 5>, <"Intro to Computing",5>};
