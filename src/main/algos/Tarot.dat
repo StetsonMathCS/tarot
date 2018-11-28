@@ -15,17 +15,23 @@ maxStudents = 25;
 
 Weekdays={Mon, Wed, Fri};
 Professors= {"Eckroth", "Plante", "ElAarag", "Koc", "TBA"};
-Courses= {"Database Systems", "Web App", "Big Data", "Senior P1", "Senior P2", "Intro to Computing", 
-		"Intro to Comp1", "Intro to Comp1", "Intro to Comp2", "Discrete Structures", "Soft Dev1", "Operating Systems", 
-		"Computer Networks", "Computer Graphics", "Senior R1", "Senior R2"};
+Courses= {"Database Systems", "Web App", "Big Data", "Senior P1", "Senior P2", "Intro to Computing",
+                "Intro to Comp1", "Intro to Comp1", "Intro to Comp2", "Discrete Structures", "Soft Dev1", "Operating Systems",
+                "Computer Networks", "Computer Graphics", "Senior R1", "Senior R2"};
 
 Rooms = {"Room1", "Room2", "Room3", "Room4", "Room5", "empty", "Lab1", "Lab2"};
 //Labs = {"Lab1", "Lab2"};
 
 
 //Shifts= { 8to12, 12to4, 4to8};
+CoursePrefs = [[1,0,1,0,0,0,0,0,0,0,1,0,0,0,0],
+				[0,1,0,1,1,0,0,1,0,0,0,0,0,1,1],
+				[0,0,0,0,0,0,0,0,1,0,1,1,0,0,0],
+				[0,0,0,0,0,0,1,0,0,0,0,0,1,0,0],
+				[0,0,0,0,0,1,1,0,0,0,0,0,0,0,0]];
 
-ProfCourses = { 
+
+ProfCourses = {
  <Eckroth, {DatabaseSystems,BigData, SoftDev1}>,
  <Plante, {WebApp, SeniorP1, SeniorP2, IntrotoComp2, SeniorR1, SeniorR2}>,
  <ElAarag,{DiscreteStructures, OperatingSystems, ComputerNetworks}>,
