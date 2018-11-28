@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -66,6 +67,7 @@ class DbControllerTest {
 
     @Test
     void executeQueryAsync() throws ExecutionException, InterruptedException, SQLException, IOException {
-        dbController.executeQueryAsync("SHOW DATABASES;", dbCallback);
+        PreparedStatement stmt = dbController.getConn().prepareStatement("SHOW DATABASES;");
+        dbController.executeQueryAsync(stmt, dbCallback);
     }
 }
