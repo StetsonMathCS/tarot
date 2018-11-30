@@ -19,8 +19,9 @@ float PeriodPrefs[p in Periods][c in Courses] = ...;
 
 // Data Structure
 tuple LCourse {
-  key string LC;
-  int LP;
+	string LC;
+  {string} LDay;
+
 }
 
 
@@ -62,47 +63,60 @@ dexpr int TotUnfilled  =
 //minimize sum (p in Periods) P[p];
 
 //maximize sum (c in Courses, p in Periods, r in Rooms) Occupy[c][r][p];
-maximize sum(j in Professors, c in Courses, r in Rooms, w in Weekdays, p in Periods) Assign[w,p,r,j,c]*CoursePrefs[j,c]*PeriodPrefs[p,c];
+maximize sum(j in Professors, c in Courses, r in Rooms, w in Weekdays, p in Periods) Assign[w,p,r,j,c]*(CoursePrefs[j,c])*PeriodPrefs[p,c];
 
-//minimize 0;
-// Note:  Since the penalty is higher than the maximal 
-// possible difference in the # of Periods assigned to the Students,
-// the schedule always fills the demand first, and then balances the class load.
 
 subject to {
 // To assign a professor to teach a course in a specific time and room
 	forall(h in HardSign)
 		forall (w in h.WA) Assign[w][h.PA][h.RA][h.PrA][h.CA] ==1;
 	  
-//   forall(w in Weekdays, p in Periods, r in Rooms, c in Courses)  //only 1 professor per room/period 
-//       sum(j in Professors)
-//         Assign[w][p][r][j][c] == 1;
+   forall(w in Weekdays, p in Periods, r in Rooms, c in Courses)  //only 1 professor per room/period 
+       sum(j in Professors)
+        Assign[w][p][r][j][c] <= 1;
 //number of instruction-units assigned to an instructor must not exceed the limit
-forall(j in Professors) 
+/* forall(j in Professors) 
 	sum(c in Courses) X[j, c] <= NbPeriods;
 // each instruction-units must be assigned to exactly 1 instructor
 forall(c in Courses) 
 	sum(j in Professors) X[j, c] == 1;
+	*/
 	
-forall(w in Weekdays, p in Periods, r in Rooms)
+	
+	
+	
+	  
+	forall(w in Weekdays, p in Periods, r in Rooms)
    sum(j in Professors, c in Courses) Assign[w][p][r][j][c] <= 1;
 //One prof/course combo per timeslot
-  forall (c in Courses, w in Weekdays)
-    sum (p in Periods, j in Professors, r in Rooms) Assign[w][p][r][j][c] == 1;
+  forall (c in LongCourses)
+    forall (w in c.LDay)
+    	sum (p in Periods, j in Professors, r in Rooms) Assign[w][p][r][j][c.LC] == 1;
   
-	forall (w in Weekdays, c in Courses)
-	  sum (p in Periods, r in Rooms, j in Professors) Assign[w][p][r][j][c] <= 1;
+  forall (w in Weekdays, c in Courses, j in Professors, r in Rooms)
+    sum (p in Periods) Assign[w][p][r][j][c]<=1;
 
   forall (w in Weekdays, p in Periods, r in Rooms)
-    sum (c in Courses) Avail[w][p][r][c] == 1;
+    sum (c in Courses) Avail[w][p][r][c] <= 1;
   
+  //forall (c in Courses, j in Professors)
+   //  sum (w in Weekdays, r in Rooms) Assign[w][5][r][j][c] <= 1;
+     
   forall (w in Weekdays, p in Periods, r in Rooms, c in Courses)
     sum (j in Professors) Assign[w][p][r][j][c] <= Avail[w][p][r][c];
     
  forall(j in Professors, w in Weekdays, p in Periods)
    	sum (c in Courses, r in Rooms) Assign[w][p][r][j][c] <= 1;
    	
-//each course in only one room
+   	 forall (c in Courses, p in 1..5, r in Rooms, j in Professors)
+	    Assign["Mon"][p][r][j][c] == Assign["Wed"][p][r][j][c];
+	    
+	   forall (c in Courses, p in 1..4, r in Rooms, j in Professors) 
+	    Assign["Fri"][p][r][j][c] == Assign["Mon"][p][r][j][c];
+	    
+	    forall(c in Courses, r in Rooms, j in Professors)
+	  Assign["Fri"][5][r][j][c] == 0;
+/*
 forall(c in Courses) 
 	sum(r in Rooms) R[c, r] == 1;
 	
@@ -116,6 +130,7 @@ forall(c in Courses)
 // the number of available classrooms.
 forall(p in Periods)
 	sum(c in Courses) Y[c,p] <= numRooms;
+	*/
 ////at least 1 time-slot gap between Lectures of the same instructor
 //forall(c1, c2 in Courses: c1 != c2 && crsAssi[c1] == crsAssi[c2])
 //	forall(t1, t2 in TimeSlots: abs(t1-t2) < 2)
@@ -138,10 +153,11 @@ forall(p in Periods)
 //       sum(r in Rooms)
 //         Assign[w][p][r][j][c] <= 1;
 //	
-//	forall(w in Weekdays, p in Periods, r in Rooms)  //only 1 course per room/period 
-//       sum(c in Courses)
-//         Avail[w][p][r][c] <= 1;
-//         
+	forall(w in Weekdays, p in Periods, r in Rooms)  //only 1 course per room/period 
+      sum(c in Courses)
+         Avail[w][p][r][c] <= 1;
+//   
+/*      
     forall(c in Courses, p in Periods) //one room per course per period
       sum (r in Rooms)
         Occupy[c][r][p] <= 1;
@@ -149,6 +165,7 @@ forall(p in Periods)
     forall(r in Rooms, p in Periods) //each course only given once per period
       sum (c in Courses)
         Occupy[c][r][p] <= 1;
+        */
 //     
 //    forall(p in Periods, s in Students) //one course per period
 //      	sum (c in Courses)
