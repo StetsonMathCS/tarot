@@ -12,13 +12,12 @@ range Students = 1..totalStudents;
 {string} Professors = ...;     // Set of Professors
 {string} Weekdays = ...;   // Set of work days 
 {string} Rooms = ...;     // Set of Rooms
-//{string} Labs = ...;	// Set of Labs
 {string} Courses = ...;    // Set of Courses
 float CoursePrefs[j in Professors][c in Courses] = ...;
 float PeriodPrefs[p in Periods][c in Courses] = ...;
+
+
 // Data Structure
-
-
 tuple LCourse {
   key string LC;
   int LP;

@@ -1,7 +1,5 @@
 
 
-// To assign a professor to teach a course in a specific time (Exmple)
-
 
 totalPeriods=5;
 totalStudents = 100;
@@ -15,12 +13,12 @@ Courses= {"Database Systems", "Web App", "Big Data", "Senior P1", "Senior P2", "
                 "Intro to Comp1", "Intro to Comp1", "Intro to Comp2", "Discrete Structures", "Soft Dev1", "Operating Systems",
                 "Computer Networks", "Computer Graphics", "Senior R1", "Senior R2"};
 
-Rooms = {"Room1", "Room2", "Room3", "Room4", "Room5", "empty", "Lab1", "Lab2"};
-//Labs = {"Lab1", "Lab2"};
+Rooms = {"Room1", "Room2", "Room3", "Room4", "Room5", "Room6", "Room7", "Room8"};
 
-HardSign = {<1,{Mon, Wed},"Eckroth","Room1","Database Systems">, <2,{Wed, Fri},"TBA", "Lab1", "Big Data">};
 
-//Shifts= { 8to12, 12to4, 4to8};
+HardSign = {<1,{Mon, Wed},"Eckroth","Room1","Database Systems">, <2,{Wed, Fri},"TBA", "Room7", "Big Data">};
+
+
 CoursePrefs = [[1,0,1,0,0,0,0,0.9,0,1,0.9,0,0,0,0],
 				[0,1,0,0,0,0,0.9,1,0,0,0,0.9,0,0,0],
 				[0.9,0,0,0,0,0,0,0,1,0,1,1,0,0,0],
@@ -33,3 +31,4 @@ PeriodPrefs = [[1,1,1,1,1,0,1,1,1,1,1,0,1,1,1],
 				[0,0,0,0,0,1,0,0,0,0,0,1,0,0,0]];
 
 LongCourses = {<"Computer Networks", 5>, <"Intro to Computing",5>};
+
