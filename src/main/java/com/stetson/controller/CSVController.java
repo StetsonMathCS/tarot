@@ -73,6 +73,7 @@ public class CSVController {
         return UUID.randomUUID().toString();//new String(hashDigest.digest());
     }
 
+    // when accessing use /csv before as whole controller here appends csv to url.
     @RequestMapping(value = "/download/{source}/{filename}")
     public void downloadResource(HttpServletRequest request,
                                  HttpServletResponse response,
