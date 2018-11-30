@@ -16,7 +16,7 @@ class CPlexObjTest {
 
         byte[] encoded;
         try {
-            encoded = Files.readAllBytes(Paths.get("./src/main/tests/com/stetson/models/cplex_test/cplex_output.txt"));
+            encoded = Files.readAllBytes(Paths.get("./src/main/tests/com/stetson/models/cplex_test/cplex_output_2.txt"));
             CPlexObj cPlexObj = new CPlexObj(new String(encoded, Charset.defaultCharset()));
             System.out.println("test:CPlexObjTest:parseCplex: Parsing successful -> "+cPlexObj.getParsedCplexData().toString());
 

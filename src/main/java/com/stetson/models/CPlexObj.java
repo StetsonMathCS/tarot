@@ -117,7 +117,9 @@ public class CPlexObj {
             INPUT.put(1,new JSONArray("[\"Monday\",\"Wednesday\",\"Friday\"]"));
             INPUT.put(2, new JSONArray("[\"Room1\", \"Room2\", \"Room3\", \"Room4\", \"Room5\", \"empty\", \"Lab1\", \"Lab2\"]"));
             INPUT.put(3, new JSONArray("[\"Eckroth\", \"Plante\", \"ElAarag\", \"Koc\", \"TBA\"]"));
-            INPUT.put(4, new JSONArray("[\"Database Systems\", \"Web App\", \"Big Data\", \"Senior P1\", \"Senior P2\", \"Intro to Computing\", \"Intro to Comp1\", \"Intro to Comp2\", \"Discrete Structures\", \"Soft Dev1\", \"Operating Systems\", \"Computer Networks\", \"Computer Graphics\", \"Senior R1\", \"Senior R2\"]"));
+            INPUT.put(4, new JSONArray("[\"Database Systems\", \"Web App\", \"Big Data\", \"Intro to Computing\", \"Intro to Comp1\", \"Intro to Comp2\", \"Discrete Structures\", \"Soft Dev1\", \"Operating Systems\", \"Computer Networks\", \"Computer Graphics\"]"));
+//            INPUT.put(4, new JSONArray("[\"Database Systems\", \"Web App\", \"Big Data\", \"Senior P1\", \"Senior P2\", \"Intro to Computing\", \"Intro to Comp1\", \"Intro to Comp2\", \"Discrete Structures\", \"Soft Dev1\", \"Operating Systems\", \"Computer Networks\", \"Computer Graphics\", \"Senior R1\", \"Senior R2\"]"));
+
         } else {
             System.out.println("CplexObj:initializeINPUT: Input already initialized.");
         }
