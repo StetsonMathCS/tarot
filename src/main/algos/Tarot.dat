@@ -2,10 +2,7 @@
 
 
 totalPeriods=5;
-totalStudents = 100;
 NbPeriods=4;
-maxStudents = 25;
-
 
 Weekdays={Mon, Wed, Fri};
 Professors= {"Eckroth", "Plante", "ElAarag", "Koc", "TBA"};
