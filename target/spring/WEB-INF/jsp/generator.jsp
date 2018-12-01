@@ -51,54 +51,9 @@
                                     <tr>
                                         <th scope="col">Room</th>
                                         <th scope="col">Capacity</th>
-                                        <th scope="col">Available</th>
-                                        <th scope="col">Block Out</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Elizabeth 205</td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="roomCapacity[0]" id="exampleFormControlSelect7">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            8:00 AM - 5:00 PM
-                                        </td>
-                                        <td>
-                                            <input type="text">
-                                            <div class="btn btn-dark">+</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Elizabeth 210</td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="roomCapacity[1]" id="exampleFormControlSelect8">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            8:00 AM - 5:00 PM
-                                        </td>
-                                        <td>
-                                            <input type="text">
-                                            <div class="btn btn-dark">+</div>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody id="roomParameters"></tbody>
                             </table>
                         </div>
                     </div>
@@ -118,62 +73,7 @@
                                         <th scope="col">Block Out</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Hala ElAarag</td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="facultyMaxClass[0]" id="exampleFormControlSelect9">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>
-                                                    10:00 AM - 12:00 PM
-                                                    <div class="btn btn-danger">-</div>
-                                                </li>
-                                                <li>
-                                                    01:00 PM - 3:00 PM
-                                                    <div class="btn btn-danger">-</div>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <input type="text">
-                                            <div class="btn btn-dark">+</div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Daniel Plante</td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="facultyMaxClass[1]" id="exampleFormControlSelect10">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <ul>
-                                                <li>09:00 AM - 12:00 PM<div class="btn btn-danger">-</div></li>
-                                                <li>01:00 PM - 5:00 PM<div class="btn btn-danger">-</div></li>
-                                            </ul>
-                                        </td>
-                                        <td>
-                                            <input type="text">
-                                            <div class="btn btn-dark">+</div>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody id="facultyParameters"></tbody>
                             </table>
                         </div>
                     </div>

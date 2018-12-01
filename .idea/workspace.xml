@@ -7,9 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89ea4566-76a4-4bb7-a00c-60030eeeb88f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker_start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker_start.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/generator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/generator.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/tarot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/tarot.js" afterDir="false" />
     </list>
@@ -45,22 +42,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="14" />
-          <entry key="js" value="305" />
-          <entry key="jsp" value="38" />
+          <entry key="js" value="1265" />
+          <entry key="jsp" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="14" />
-          <entry key="JSP" value="38" />
-          <entry key="JavaScript" value="305" />
+          <entry key="JSP" value="82" />
+          <entry key="JavaScript" value="1265" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="dat" value="2" />
           <entry key="java" value="5" />
           <entry key="js" value="1" />
           <entry key="jsp" value="1" />
+          <entry key="opl" value="1" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -68,26 +68,36 @@
           <entry key="JAVA" value="5" />
           <entry key="JSP" value="1" />
           <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tarot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="280">
+              <caret line="153" column="29" lean-forward="true" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/algos/Tarot.dat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/generator.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="872">
-              <caret line="186" column="62" selection-start-line="186" selection-start-column="62" selection-end-line="186" selection-end-column="62" />
+            <state relative-caret-position="310">
+              <caret line="75" column="62" selection-start-line="75" selection-start-column="62" selection-end-line="75" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -180,8 +190,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/models/CPlexObj.java" />
         <option value="$PROJECT_DIR$/src/main/tests/com/stetson/models/CPlexObjTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/IDbController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/generator.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/tarot.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/generator.jsp" />
       </list>
     </option>
   </component>
@@ -256,6 +266,13 @@
               <item name="CSCI321" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CSCI321" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSCI321" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="algos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CSCI321" type="b2602c69:ProjectViewProjectNode" />
@@ -586,7 +603,7 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19241774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19241774" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -596,7 +613,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32942554" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38980892" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1566879" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -618,7 +635,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="SciView" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="9" visible="true" weight="0.32904148" />
+      <window_info anchor="right" id="Maven Projects" order="9" visible="true" weight="0.32904148" />
       <window_info anchor="right" id="Cargo" order="10" />
     </layout>
   </component>
@@ -629,16 +646,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/tests/com/stetson/models/cplex_test.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20160810/json-20160810.jar!/org/json/JSONArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/d.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/stetson/controller/interfaces/k.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/headers/k.sh" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -865,17 +872,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/generator.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/algos/staffing.opl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/algos/output.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="186" column="62" selection-start-line="186" selection-start-column="62" selection-end-line="186" selection-end-column="62" />
-        </state>
+        <state relative-caret-position="-10433" />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/algos/readme.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/tarot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state relative-caret-position="280">
+          <caret line="153" column="29" lean-forward="true" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/algos/Tarot.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/generator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="75" column="62" selection-start-line="75" selection-start-column="62" selection-end-line="75" selection-end-column="62" />
         </state>
       </provider>
     </entry>
