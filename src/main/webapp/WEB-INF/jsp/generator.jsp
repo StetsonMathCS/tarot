@@ -19,7 +19,7 @@
         </a>
     </nav>
     <div class="container mt-5">
-        <form id="myForm">
+        <form id="myForm" action="" method="POST">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-10">
                     <div class="card">
@@ -51,6 +51,7 @@
                                     <tr>
                                         <th scope="col">Room</th>
                                         <th scope="col">Capacity</th>
+                                        <th scope="col">Active</th>
                                     </tr>
                                 </thead>
                                 <tbody id="roomParameters"></tbody>
@@ -69,8 +70,8 @@
                                     <tr>
                                         <th scope="col">Faculty</th>
                                         <th scope="col">Max Classes</th>
-                                        <th scope="col">Available</th>
-                                        <th scope="col">Block Out</th>
+                                        <th scope="col">Active</th>
+                                        <th scope="col">Availability (From/To)</th>
                                     </tr>
                                 </thead>
                                 <tbody id="facultyParameters"></tbody>
@@ -79,7 +80,7 @@
                     </div>
                 </div>
                 <div class="col-md-10 mb-5">
-                    <div class="btn btn-dark w-100" type="submit" onclick="submitForm();">Generate</div>
+                    <input type="submit" onclick="submitForm();" class="btn btn-primary">Generate</div>
                 </div>
             </div>
         </form>
