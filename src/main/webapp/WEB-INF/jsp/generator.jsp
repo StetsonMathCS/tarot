@@ -35,83 +35,7 @@
                                         <th scope="col">Sections</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>CSCI 111. Introduction to Computing</td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="courseCapacity[0]" id="exampleFormControlSelect1">
-                                                    <option>5</option>
-                                                    <option>10</option>
-                                                    <option>15</option>
-                                                    <option>20</option>
-                                                    <option>25</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="courseSections[0]" id="exampleFormControlSelect2">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CSCI 141. Introduction to Computer Science I</td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="courseCapacity[1]" id="exampleFormControlSelect3">
-                                                    <option>5</option>
-                                                    <option>10</option>
-                                                    <option>15</option>
-                                                    <option>20</option>
-                                                    <option>25</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="courseSections[1]" id="exampleFormControlSelect4">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>CSCI 190. Special Topics in Computer Science</td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="courseCapacity[2]" id="exampleFormControlSelect5">
-                                                    <option>5</option>
-                                                    <option>10</option>
-                                                    <option>15</option>
-                                                    <option>20</option>
-                                                    <option>25</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-group col-sm-8">
-                                                <select class="form-control" name="courseSections[2]" id="exampleFormControlSelect6">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                                <tbody id="courseParameters"></tbody>
                             </table>
                         </div>
                     </div>
@@ -260,5 +184,6 @@
             </div>
         </form>
     </div>
+    <script type="text/javascript"> loadGenerator(); </script>
 </body>
 </html>

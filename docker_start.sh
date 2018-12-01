@@ -1,4 +1,5 @@
-docker pull wsdt/tarot:latest
+#docker pull wsdt/tarot:latest
 docker stop stetson_server
 docker rm stetson_server
-docker run --name stetson_server -v /var/logs/tarot:/usr/local/tomcat/logs --network="host" wsdt/tarot:latest
+docker build -t tarot .
+docker run --name stetson_server -p 80:8080 -v /Users/baileygranam/documents/logs/tarot:/usr/local/tomcat/logs tarot
