@@ -1,0 +1,6 @@
+/*
+*To connect to the database you need to create a text file called "input.txt" with the password and username as shown below
+*/
+
+user=XXXXX
+pwd=XXXXX
