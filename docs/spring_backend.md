@@ -44,6 +44,7 @@ You can test this by accessing a random url, e.g.: [http://tarot.artifice.cc:808
  > As a regular user of the application, I want to login via a password/pin without having separate users in the backend so that there is no issue in managing different accounts.
  
 As we only have one user, the user can authenticate itself via an access token (= password). If wrong no access is granted and all hidden urls redirect the user back to the login panel.
+
 ![alt login_page](./img/login_page.JPG) 
 
 
@@ -82,6 +83,7 @@ When logged in the user gets redirected from /login to /index. When unauthentica
  > As a maintainer of the application, I want to have e.g. some small interfaces (cohesion!) to configure/change hardcoded variables, so that I won't need to look through old code.
  
  To keep the code readable I tried to add comments (where it makes sense) and added interfaces to separate constants from logic. All interfaces of a sub-package have been moved into "inteface"-package.
+ 
   ![alt cohesion](./img/cohesion.JPG)
   
 ### Create generic db connection
@@ -103,6 +105,7 @@ The Dockerfile is in the root folder of this project and is automatically built 
 For simplicity reasons I provided also a '_docker_start.sh_', which pulls the image from Dockerhub and then starts a container. 
 
 Additionally, I provided a './update_script.sh' on the remote server itself (which is quite similar to the docker_start.sh-Script) to stop the current server instance, pull the new image and then start the updated-server version. The .SH-File is located in my user-folder (you can move it wherever you want, it's not bound to anything).
+
 ![alt update_script](./img/update_script.JPG)
 
 
@@ -124,6 +127,7 @@ You will find the header file in '_/webapp/WEB-INF/jsp/headers/analytics.jsp_'. 
 > Add JUNIT tests
 
 All tests are in '_./tests/**/*.java_' and can be executed as usual. All tests have been executed before the final submission.
+
 ![alt tests](./img/tests.JPG)
 
 
