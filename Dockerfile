@@ -17,5 +17,5 @@ LABEL version="1.0.0" \
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 #&& rm -rf /usr/local/tomcat/conf/server.xml
 #ADD https://github.com/wsdt/tarot/raw/master/server.xml /usr/local/tomcat/conf/server.xml
-ADD https://github.com/wsdt/tarot/raw/master/target/spring/ROOT.war /usr/local/tomcat/webapps/ROOT.war
+ADD ./target/spring.war /usr/local/tomcat/webapps/ROOT.war
 

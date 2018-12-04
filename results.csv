@@ -1,0 +1,16 @@
+"Weekdays";"Professors";"Courses";"Rooms";"ProfCourses";"maxStudents"
+"Monday";"Eckroth";"Database Systems";"Room1";"Eckroth (DatabaseSystems, BigData, SoftDev1)";25
+"Wednesday";"Plante";"Web App";"Room2";"Plante (WebApp, SeniorP1, SeniorP2, IntrotoComp2, SeniorR1, SeniorR2)";0
+"Friday";"ElAarag";"Big Data";"Room3";"ElAarag (DiscreteStructures, OperatingSystems, ComputerNetworks)";0
+"";"Koc";"Senior P1";"Room4";"Koc (IntrotoComp1, ComputerGraphics)";0
+"";"TBA";"Senior P2";"Room5";"TBA (IntrotoComputing, IntrotoComp1)";0
+"";"";"IntrotoComputing";"Empty";"";0
+"";"";"Intro to Comp1";"Lab1";"";0
+"";"";"Intro to Comp2";"Lab2";"";0
+"";"";"Discrete Structures";"";"";0
+"";"";"Soft Dev1";"";"";0
+"";"";"Operating Systems";"";"";0
+"";"";"Computer Networks";"";"";0
+"";"";"Computer Graphics";"";"";0
+"";"";"SeniorR1";"";"";0
+"";"";"SeniorR2";"";"";0

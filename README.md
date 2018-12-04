@@ -1,4 +1,4 @@
-# Stetson - Course Scheduling [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://bitbucket.org/lbesson/ansi-colors) [![GitHub license](https://img.shields.io/github/license/wsdt/tarot.svg)](https://github.com/wsdt/tarot/blob/master/LICENSE) [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://www.docker.com/) ![Travis (.org)](https://img.shields.io/travis/wsdt/tarot.svg)
+# Stetson - Course Scheduling [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://bitbucket.org/lbesson/ansi-colors) [![GitHub license](https://img.shields.io/github/license/wsdt/tarot.svg)](https://github.com/wsdt/tarot/blob/master/LICENSE) [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://www.docker.com/) [![Build Status](https://travis-ci.org/StetsonMathCS/tarot.svg?branch=master)](https://travis-ci.org/StetsonMathCS/tarot)
 
 
 To save project configuration push also the .idea folder! 
