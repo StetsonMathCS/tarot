@@ -1,6 +1,6 @@
 1 [X] As a regular user of the application, I want to receive a simple error page if sth. went wrong so potential user might find a solution for that issue. 
 2 [X] As a regular user of the application, I want to login via a password/pin without having separate users in the backend so that there is no issue in managing different accounts.
-3 [ ] As a regular user of the application, I want to be able to share my generated data via an unique link (e.g. by generating a hash of that file and using that hash as a get-param) so that there are no complications in getting the generated file from A to B. 
+3 [X] As a regular user of the application, I want to be able to share my generated data via an unique link (e.g. by generating a hash of that file and using that hash as a get-param) so that there are no complications in getting the generated file from A to B. 
 4 [X] As a regular user of the application, I want to be able to download the generated file as e.g. a CSV-file so that files don't necessarily need to be shared via a link. 
 5 [ ] As a regular user of the application, I want to select all constraints on a single/the same page so that I have a good overview of what data I want to generate. 
 6 [ ] As a regular user of the application, I want to have the constraint view and the result view (= generated data) separated (different pages -> two step interface), so that I won't get confused when my generated data appears. 
@@ -23,4 +23,4 @@ Additional logs:
 20 [X] parse data from CPlex directly (algo guys) -> currently Json?!!
 21 [X] rowMap HashMap load Data from Db and save back (mapping). HashMap is enough. 
 
-22 [ ] show CPLEX data result as table and make it downloadable as csv (shareable via hashed link). PARSE REALLY, shorten table, human readable etc.
+22 [X] show CPLEX data result as table and make it downloadable as csv (shareable via hashed link). PARSE REALLY, shorten table, human readable etc.
