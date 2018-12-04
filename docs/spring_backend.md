@@ -1,4 +1,4 @@
-# Spring Backend
+# Spring Backend [![Generic badge](https://img.shields.io/badge/Docker-Compatible-blue.svg)](https://www.docker.com/) ![Docker Build Status](https://img.shields.io/docker/build/wsdt/tarot.svg)
 ###### *© Riedl Kevin, 2018*
 
 ## What is it?
@@ -21,7 +21,7 @@ Features done:
 - JUnit tests
 - Merge code with Bailey
 - hook into real db (only localhost but outside of docker)
-- parse data from CPlex directly (algo guys) -> currently Json?!!
+- parse data from CPlex directly
 - rowMap HashMap load Data from Db and save back (mapping). HashMap is enough. 
 - show CPLEX data result as table and make it downloadable as csv (shareable via hashed link). PARSE REALLY, shorten table, human readable etc.
 
@@ -48,7 +48,8 @@ As we only have one user, the user can authenticate itself via an access token (
 
 
 ### File-sharing
-> As a regular user of the application, I want to be able to share my generated data via an unique link (e.g. by generating a hash of that file and using that hash as a get-param) 
+> As a regular user of the application, I want to be able to share my generated data via an unique link (e.g. by generating a hash of that file and using that hash as a get-param)
+ 
 > As a regular user of the application, I want to be able to download the generated file as e.g. a CSV-file so that files don't necessarily need to be shared via a link. 
 
 Generated .CSV-files can be downloaded/shared via following url pattern (works only when logged in): 
@@ -133,4 +134,35 @@ As I did in majority only the Backend, I needed to include the generator-View fr
 You can view the generator view after being authenticated via: [/generator](http://tarot.artifice.cc:8080/generator).
 
 
+### Remote Database
+> hook into real db (only localhost but outside of docker)
+
+After the remote database was ready, I adapted the 'Dockerfile' and 'docker_start.sh' to be able to access the real database locally (without sending a request from the vm/docker container and accessing the db from outside). 
+Therefore, the db is accessed now via localhost. You can test this with the 'DbControllerTest.java' again.
+
  
+### Cplex
+> parse data from CPlex directly
+
+> show CPLEX data result as table and make it downloadable as csv (shareable via hashed link). PARSE REALLY, shorten table, human readable etc.
+
+Parsing data from cplex was actually pretty interesting and has been achieved by doing following operations: 
+1. Receive cplex output file and read into memory.  
+2. Remove unnecessary data (e.g. comments, not-relevant data,...) via Regex. 
+3. Transform relevant data by Regex/Replace operations to have a parseable, multidimensional JSON array. 
+4. After having the valid JSON-Array all the Os/1s get mapped via a multidimensional foreach-loop to their corresponding labels.
+5. This mapped data is then concatenated to CSV-format which is afterwards saved from memory to a .CSV-file.
+6. The saved .CSV-file can then be downloaded via a link (see 'File-sharing')
+
+#### Test
+You can test this by executing the 'CSVControllerTest.java', 'CPlexControllerTest.java' and 'CPlexObjTest.java'.
+
+
+### RowMap
+> rowMap HashMap load Data from Db and save back (mapping). HashMap is enough. 
+
+I created a simple, custom hashmap (see 'DbRowMap.java') to load database tables into memory, modify the data and save it via a simple method call back into the database to keep the object and databse in sync.
+The object has a small "API" (consisting of two methods) to load data and save data. 
+
+#### Test
+This is testable by executing the 'DbRowMapTest.java'. 
