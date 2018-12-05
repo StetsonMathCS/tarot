@@ -34,8 +34,7 @@ Basically, there are many different kinds of errors, but we separate them here o
 Client-side errors (like 404 Resource not found) on the other hand are mostly only shown to the user when he is already authenticated/logged in. Therefore, when a user tries to access a page which does not exist and he is not logged in, he will be simply redirected to the login panel. I chose this approach for usability and security reasons.
 
 #### Test
-You can test this by accessing a random url, e.g.: [http://tarot.artifice.cc:8080/jsdjds](http://tarot.artifice.cc:8080/jsdjds) when logged in and when unauthenticated. 
-**NOTE: The server was accessible via port 80, but as Mikhael wanted to add a proxy or similar what worked, too. But, today seemingly his proxy is down so you might need to access the site via port 8080.**
+You can test this by accessing a random url, e.g.: [http://tarot.artifice.cc/jsdjds](http://tarot.artifice.cc/jsdjds) when logged in and when unauthenticated. 
 
 ![alt error_page](./img/error_page.JPG)
 
@@ -61,7 +60,7 @@ All other params in source result in a 'file not found' and the user only sees a
 
 Filename is what the name says the name of the file. The file has to exist and the filename usually consists of numbers, letters and dashes (using a UUID). The file-extension '.csv' does not need to be supplied and would cause a file not found error.
 Possible example (you need to be authenticated and as said file need to exist): 
-- http://tarot.artifice.cc:8080/csv/download/cplex/9281e943-9fb8-432e-bc92-a43cf2644d1d
+- http://tarot.artifice.cc/csv/download/cplex/9281e943-9fb8-432e-bc92-a43cf2644d1d
 
 ![alt csv_download](./img/csv_download.JPG)
 
@@ -73,8 +72,8 @@ For usability reasons the user remains logged in for a certain amount of time.
 
 #### Test
 You can examine that by calling following URLs when logged in and when unauthenticated: 
-- [/index](http://tarot.artifice.cc:8080/index)
-- [/login](http://tarot.artifice.cc:8080/login)
+- [/index](http://tarot.artifice.cc/index)
+- [/login](http://tarot.artifice.cc/login)
 
 When logged in the user gets redirected from /login to /index. When unauthenticated the user is lead from /index (or any other url) to /login.
 
@@ -135,7 +134,7 @@ All tests are in '_./tests/**/*.java_' and can be executed as usual. All tests h
 > Merge code with Bailey
 
 As I did in majority only the Backend, I needed to include the generator-View from Bailey. You will find his adapted solution in '_./webapp/WEB-INF/jsp/generator.jsp_'. 
-You can view the generator view after being authenticated via: [/generator](http://tarot.artifice.cc:8080/generator).
+You can view the generator view after being authenticated via: [/generator](http://tarot.artifice.cc/generator).
 
 
 ### Remote Database
