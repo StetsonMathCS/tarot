@@ -15,26 +15,21 @@ Our program generates university time tables with IBM ILOG CPLEX optimization so
 
 ### How to run the program:
 
-* On the server:
-
- * Go to the following directory:
- 	/opt/ibm/ILOG/CPLEX_Studio128/opl/bin/x86-64_linux 
-
- * Then run the following line: 
-   	LD_LIBRARY_PATH=./ ./oplrun tarot/Tarot.mod tarot/Tarot.dat
-
- * The output.txt file will be generated/updated with the results in tarot folder
+  * On the server:
+    * Go to the following directory: /opt/ibm/ILOG/CPLEX_Studio128/opl/bin/x86-64_linux 
+    * Then run the following line: LD_LIBRARY_PATH=./ ./oplrun tarot/Tarot.mod tarot/Tarot.dat
+    * The output.txt file will be generated/updated with the results in tarot folder
 
 
-* On Windows/Mac:
- * run IBM ILOG CPLEX Optimization Studio (oplide)
- * Import the files for the program ex. Tarot.dat and Tarot.mod
- * Add them to Run Configuration – Basic Configuration to be able to run them
- * Click run in the top :)
+  * On Windows/Mac:
+    * run IBM ILOG CPLEX Optimization Studio (oplide)
+    * Import the files for the program ex. Tarot.dat and Tarot.mod
+    * Add them to Run Configuration – Basic Configuration to be able to run them
+    * Click run in the top :)
 
 
 
-How does the program works:
+### How does the program work:
 The program uses two files, Tarot.dat and Tarot.mod
 Tarot.dat contains all the data of the program 
 totalPeriods: is the total number of periods for a day
