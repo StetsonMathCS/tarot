@@ -34,18 +34,18 @@ The program uses two files, Tarot.dat and Tarot.mod
 
 * Tarot.dat contains all the data of the program 
 
-  *totalPeriods: is the total number of periods for a day
-  *numRooms: is the total number of classrooms available
-  *Weekdays: are the days that will be used for scheduling
-  *Professors: set of strings that contains the professors
-  *Courses: set of strings that contains the courses
-  *Rooms: set of strings that contains the classrooms
-  *HardSign: list of the classes that must be assigned at a specific time before scheduling other classes
+    * totalPeriods: is the total number of periods for a day
+    * numRooms: is the total number of classrooms available
+    * Weekdays: are the days that will be used for scheduling
+    * Professors: set of strings that contains the professors
+    * Courses: set of strings that contains the courses
+    * Rooms: set of strings that contains the classrooms
+    * HardSign: list of the classes that must be assigned at a specific time before scheduling other classes
   <int Period number, {set of strings days assigned}, string professor’s name, string name of the room, string name of the course>
   Ex. <1,{Mon, Wed, Fri},"Eckroth","Room1","Database Systems">
-  *CoursePrefs: Two dimensional array (columns are courses, rows are professors) that contains a float representing a weighting of courses preferences for each professor 
-  *PeriodPrefs: Two dimensional array (columns are courses, rows are periods) that contains a float representing a weighting of courses preferences for each period
-  *LongCourses: list of the courses and which days they should be taught depending if a course is a regular or a long course
+    * CoursePrefs: Two dimensional array (columns are courses, rows are professors) that contains a float representing a weighting of courses preferences for each professor 
+    * PeriodPrefs: Two dimensional array (columns are courses, rows are periods) that contains a float representing a weighting of courses preferences for each period
+    * LongCourses: list of the courses and which days they should be taught depending if a course is a regular or a long course
   <string name of the course, {set of strings days assigned}> 
   <"Database Systems", {Mon, Wed, Fri}>
 
