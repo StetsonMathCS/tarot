@@ -1,8 +1,8 @@
 # DevOps for Tarot
-## List of notable software on Tarot sever:
+## Notable software used for Tarot:
 1. Apache HTTP Server
   * Allows access to the Tarot website (login) through a web browser.
-  * Config files are at /etc/apache2/ports.conf and /etc/apache2/sites-enabled/000-default.conf
+  * Configuration files are at /etc/apache2/ports.conf and /etc/apache2/sites-enabled/000-default.conf
   * Port 80 is reverse-proxied to connect to port 8080, which hosts a Docker container with the Tarot website.
   * Port 8888 hosts administrative web apps like Munin and GitStats.
 2. GitStats
@@ -14,9 +14,11 @@
 4. Travis-CI
   * Continuous integration tool used for running automatic tests on Tarot code when it gets updated.
   * Runs a test every time someone commits to the Tarot repository.
+  * This is not a sotware that runs on the Tarot server, but instead gets sent to specialized servers owned by Travis-CI.
 5. Docker
   * Used to run the container for the Tarot website
   * Container listens on port 8080
+  * see https://github.com/StetsonMathCS/tarot/blob/master/docs/spring_backend.md for more details about Docker
 
 ## How to access GitStats and Munin
 For security reasons, GitStats and Munin are not accessible publicly on tarot.artifice.cc . They live on port 8888, which is not visible to the public, and only accessible by the Tarot server itself. However, you can access it with an SSH tunnel during an SSH session. This method ensures that only authorized users can see this information.
