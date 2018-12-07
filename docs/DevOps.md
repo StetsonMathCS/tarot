@@ -14,11 +14,11 @@
 4. Travis-CI
   * Continuous integration tool used for running automatic tests on Tarot code when it gets updated.
   * Runs a test every time someone commits to the Tarot repository.
-  * This is not a sotware that runs on the Tarot server, but instead gets sent to specialized servers owned by Travis-CI.
+  * This is not a sotware that runs on the Tarot server. Tests get sent to specialized servers owned by Travis-CI.
 5. Docker
-  * Used to run the container for the Tarot website
-  * Container listens on port 8080
-  * see https://github.com/StetsonMathCS/tarot/blob/master/docs/spring_backend.md for more details about Docker
+  * Used to run the container for the Tarot website.
+  * Container listens on port 8080.
+  * see https://github.com/StetsonMathCS/tarot/blob/master/docs/spring_backend.md for more details about Docker.
 
 ## How to access GitStats and Munin
 For security reasons, GitStats and Munin are not accessible publicly on tarot.artifice.cc . They live on port 8888, which is not visible to the public, and only accessible by the Tarot server itself. However, you can access it with an SSH tunnel during an SSH session. This method ensures that only authorized users can see this information.
@@ -30,7 +30,7 @@ Note: make sure to click “Add” when you enter the ports (right image)
 
 ![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_01.png "PuTTY configuration")
 ### 2. Open a web browser and type “localhost:8888” into the URL field at the top
-![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_02.png "directory index")
+![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_02b.png "directory index")
 
 Note: you can only access this URL while your SSH session is open. Don’t mind any of the .php files or passports/ directory. They are for another project.
 
