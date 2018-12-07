@@ -1,4 +1,4 @@
-# Documentation
+# Database
 
 ## Software needed:
 
@@ -9,7 +9,7 @@
 ## To install:
 * MYSQL:
   * Visit the website https://dev.mysql.com/downloads/mysql/5.7.html#downloads to download the free version of the world’s most popular open source database.
- * Download the application, run the installer as administrator, which will guide through the process and setup MySQL.
+  * Download the application, run the installer as administrator, which will guide through the process and setup MySQL.
  
 * Eclipse Java 8
   * Visit the website https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2018-09/Ra/eclipse-inst-win64.exe to download the free version.
@@ -77,7 +77,14 @@
 * To show the table imported from the csv file to the database in MySQL
   * Log into the database using the MySQL command line client
   * Issue the use command to connect to the database 
+```
+MySQL - > USE schedule_table;
+```
+  
   * To show the table imported from csv file to the database 
+```
+MySQL - > SELECT * FROM schedule_table;
+```
 
 * To run Java program
   * In order to run the program and access to the database, the user need to create a text file in Java called “input.txt” with the password and username.
@@ -86,7 +93,24 @@
 
 ## How does the importation and exportation works in Java:
 
-* The Java program will get the password and username from the textfile “input” to connect to the database table_schedule.
-* To import the csv file to database, first it would find the csv file in the computer, then it reads the file from the csv file and create a table table_schedule in the database using the following command lines.
-* After creating the table we insert the information into the table table_schedule using the following command lines.
+* The Java program will get the password and username from the textfile “input” to connect to the database schedule_table.
+* To import the csv file to database, first it would find the csv file in the computer, then it reads the file from the csv file and create a table schedule_table in the database using the following command lines
+
+```
+{
+String create = "create table schedule_table(" + array[0] + " varchar(255)," + array[1] + " int,"
++ array[2] + " varchar(255)," + array[3] + " varchar(255)," + array[4] + " varchar(255))";
+}
+```
+
+* After creating the table we insert the information into the table schedule_table using the following command lines
+
+```
+{
+String insert = "INSERT INTO schedule_table " + "(" + zero + "," + one + "," + two + "," + three
++ "," + four + ") " + "VALUES ('" + array[0] + "','" + array[1] + "','" + array[2] + "'"
++ ",'" + array[3] + "','" + array[4] + "') ";
+}
+```
+
 * To export the database table to csv file, first we read the information from the table and insert the information into a csv file and save it in a temporary file.
