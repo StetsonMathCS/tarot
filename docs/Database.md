@@ -9,7 +9,7 @@
 ## To install:
 * MYSQL:
   * Visit the website https://dev.mysql.com/downloads/mysql/5.7.html#downloads to download the free version of the world’s most popular open source database.
- *Download the application, run the installer as administrator, which will guide through the process and setup MySQL.
+ * Download the application, run the installer as administrator, which will guide through the process and setup MySQL.
  
 * Eclipse Java 8
   * Visit the website https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2018-09/Ra/eclipse-inst-win64.exe to download the free version.
@@ -81,6 +81,8 @@
 
 * To run Java program
   * In order to run the program and access to the database, the user need to create a text file in Java called “input.txt” with the password and username.
+  
+  ![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/input.png)
 
 ## How does the importation and exportation works in Java:
 
