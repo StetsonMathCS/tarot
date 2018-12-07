@@ -34,7 +34,7 @@ For Mac, open Terminal and use a command like this:
 
 ssh -L 8888:localhost:8888 yourusername@tarot.artiface.cc
 
-Note: if you do not have an account on the Tarot server, please ask the server administrator (Dr. Eckroth at j.eckroth@stetson.edu) to create one for you. He will help you generate a private key for you to login via SSH.
+Note: if you do not have an account on the Tarot server, please ask the server administrator (Dr. Eckroth at jeckroth@stetson.edu) to create one for you. He will help you generate a private key for you to login via SSH.
 
 
 ### 2. Open a web browser and type “localhost:8888” into the URL field at the top
@@ -48,7 +48,7 @@ Note: you can only access this URL while your SSH session is open.
 
 ## How to access Travis-CI
 
-Note: you need to be a member of the StetsonMathCS/tarot repository on GitHub to access Travis. If you are not currently a member, please ask Dr. Eckroth (j.eckroth@stetson.edu) for an invite to join, and accept the invite.
+Note: you need to be a member of the StetsonMathCS/tarot repository on GitHub to access Travis. If you are not currently a member, please ask Dr. Eckroth (jeckroth@stetson.edu) for an invite to join, and accept the invite.
 
 ### 1. Go to travis-ci.org and sign up for the service with your GitHub account credentials
 
