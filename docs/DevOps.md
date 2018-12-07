@@ -20,6 +20,12 @@
 
 ## How to access GitStats and Munin
 For security reasons, GitStats and Munin are not accessible publicly on tarot.artifice.cc . They live on port 8888, which is not visible to the public, and only accessible by the Tarot server itself. However, you can access it with an SSH tunnel during an SSH session. This method ensures that only authorized users can see this information.
+
 ### 1. Set up an SSH tunnel for port 8888 on the Tarot server and open a connection
+For Windows, use PuTTY with a configuration like this:
+
+Note: make sure to click “Add” when you enter the ports (right image)
+
+![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_01.png "PuTTY configuration")
 ### 2. Open a web browser and type “localhost:8888” into the URL field at the top
 ### 3. From there, you can click on gitstats/ or munin/ to see them
