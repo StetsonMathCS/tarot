@@ -32,8 +32,7 @@ Note: make sure to click “Add” when you enter the ports (right image)
 ### 2. Open a web browser and type “localhost:8888” into the URL field at the top
 ![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_02b.png "directory index")
 
-Note: you can only access this URL while your SSH session is open. Don’t mind any of the .php files or passports/ directory. They are for another project.
-
+Note: you can only access this URL while your SSH session is open.
 ### 3. From there, you can click on gitstats/ or munin/ to see them
 ![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_03.png "Munin")
 ***
@@ -45,10 +44,10 @@ Note: you need to be a member of the StetsonMathCS/tarot repository on GitHub to
 
 ### 1. Go to travis-ci.org and sign up for the service with your GitHub account credentials
 
-![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_05.png "GitStats")
+![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_05.png "Travis-CI sign-up")
 
 ### 2. The tarot repository should show up on the left side under “My Repositories” and you can look at the build history and see current builds being run in real-time.
 
-![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_06.png "GitStats")
+![alt text](https://github.com/StetsonMathCS/tarot/blob/master/docs/img/devops_06.png "Travis-CI dashboard")
 
 Note: if you don't immediately see the Tarot repository, that means that you either have not accepted the invite to join the repository, or that your GitHub account is not properly configured to send information about organizations you are a part of to Travis.
