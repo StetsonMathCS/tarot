@@ -19,6 +19,7 @@ Our program generates university time tables with IBM ILOG CPLEX optimization so
     * Go to the following directory: /opt/ibm/ILOG/CPLEX_Studio128/opl/bin/x86-64_linux 
     * Then run the following line: LD_LIBRARY_PATH=./ ./oplrun tarot/Tarot.mod tarot/Tarot.dat
     * The output.txt file will be generated/updated with the results in tarot folder
+      * Can also run by setting LD_LIBRARY_PATH to the relative path to the .../x86-64_linux directory from your working directory, and running ./(path to x64-84_linux)/oplrun instead of traversing to the directory to run it
 
 
   * On Windows/Mac:
